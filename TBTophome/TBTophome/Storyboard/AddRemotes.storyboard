@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remotes Type View Controller-->
+        <scene sceneID="HNV-VL-WvR">
+            <objects>
+                <viewController storyboardIdentifier="TBRemotesTypeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cvb-Ey-jCv" customClass="TBRemotesTypeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8IB-hD-eIS"/>
+                        <viewControllerLayoutGuide type="bottom" id="VHv-vP-gJ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mbs-l5-FPc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nhH-fb-rlQ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="add remote type cell identifier" id="bIi-Px-Lp9" customClass="TBRemoteTypeTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bIi-Px-Lp9" id="YWL-NH-SCo">
+                                            <frame key="frameInset" width="375" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MvI-ER-F7n">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="MvI-ER-F7n" secondAttribute="height" multiplier="1:1" id="8Qo-nG-iG4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmP-dh-9ql" userLabel="name">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_1" translatesAutoresizingMaskIntoConstraints="NO" id="dF0-7h-yNk">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="ab5-UV-mdH"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="dF0-7h-yNk" secondAttribute="trailing" id="0KA-RO-wc3"/>
+                                                <constraint firstItem="MvI-ER-F7n" firstAttribute="leading" secondItem="YWL-NH-SCo" secondAttribute="leading" constant="15" id="43j-wb-gZg"/>
+                                                <constraint firstAttribute="bottom" secondItem="MvI-ER-F7n" secondAttribute="bottom" constant="9" id="TRo-EJ-5uw"/>
+                                                <constraint firstItem="AmP-dh-9ql" firstAttribute="leading" secondItem="MvI-ER-F7n" secondAttribute="trailing" constant="15" id="W7E-Rs-IzO"/>
+                                                <constraint firstAttribute="bottom" secondItem="dF0-7h-yNk" secondAttribute="bottom" id="b3x-hF-te3"/>
+                                                <constraint firstItem="dF0-7h-yNk" firstAttribute="leading" secondItem="AmP-dh-9ql" secondAttribute="leading" id="iug-Qb-Ksr"/>
+                                                <constraint firstItem="AmP-dh-9ql" firstAttribute="centerY" secondItem="MvI-ER-F7n" secondAttribute="centerY" id="qa0-ZB-6fD"/>
+                                                <constraint firstItem="MvI-ER-F7n" firstAttribute="top" secondItem="YWL-NH-SCo" secondAttribute="top" constant="10" id="rSS-Gm-ypm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="typeIcon" destination="MvI-ER-F7n" id="KBU-Rc-1lF"/>
+                                            <outlet property="typeName" destination="AmP-dh-9ql" id="jej-Gi-pLK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="cvb-Ey-jCv" id="rA3-0d-j78"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VHv-vP-gJ1" firstAttribute="top" secondItem="nhH-fb-rlQ" secondAttribute="bottom" id="1ek-yu-2zW"/>
+                            <constraint firstItem="nhH-fb-rlQ" firstAttribute="top" secondItem="Mbs-l5-FPc" secondAttribute="top" id="CIH-DN-F2w"/>
+                            <constraint firstItem="nhH-fb-rlQ" firstAttribute="leading" secondItem="Mbs-l5-FPc" secondAttribute="leading" id="Ffw-mT-itv"/>
+                            <constraint firstAttribute="trailing" secondItem="nhH-fb-rlQ" secondAttribute="trailing" id="H46-Za-ILu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="nhH-fb-rlQ" id="1Ht-oW-gC8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQI-DL-iEt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-215.19999999999999" y="233.43328335832086"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line_1" width="1" height="1"/>
+    </resources>
+</document>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LFDishwasherReservationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4J-Yk-NRa">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9G6-rs-6WL">
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5W-LJ-JY7">
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_1" translatesAutoresizingMaskIntoConstraints="NO" id="Aoi-0o-Kgc"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_2" translatesAutoresizingMaskIntoConstraints="NO" id="WjH-Bd-BMW"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Biz-SS-Gww">
+                                            <state key="normal" title="取消">
+                                                <color key="titleColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="cancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="O3C-Hl-BLg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBI-bp-6L7">
+                                            <state key="normal" title="确定">
+                                                <color key="titleColor" red="1" green="0.1137254902" blue="0.41568627450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="sure:" destination="iN0-l3-epB" eventType="touchUpInside" id="MVV-2q-sEg"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="WjH-Bd-BMW" firstAttribute="top" secondItem="D5W-LJ-JY7" secondAttribute="top" id="5sU-yA-St3"/>
+                                        <constraint firstAttribute="trailing" secondItem="SBI-bp-6L7" secondAttribute="trailing" id="61G-Fq-onS"/>
+                                        <constraint firstAttribute="bottom" secondItem="Biz-SS-Gww" secondAttribute="bottom" id="8pP-lZ-mDj"/>
+                                        <constraint firstItem="SBI-bp-6L7" firstAttribute="leading" secondItem="WjH-Bd-BMW" secondAttribute="trailing" id="9Ni-um-DSj"/>
+                                        <constraint firstAttribute="trailing" secondItem="Aoi-0o-Kgc" secondAttribute="trailing" id="Ib8-t7-eXM"/>
+                                        <constraint firstItem="Biz-SS-Gww" firstAttribute="leading" secondItem="D5W-LJ-JY7" secondAttribute="leading" id="JVr-NA-9YT"/>
+                                        <constraint firstItem="Aoi-0o-Kgc" firstAttribute="leading" secondItem="D5W-LJ-JY7" secondAttribute="leading" id="NkR-fA-Yhu"/>
+                                        <constraint firstItem="Aoi-0o-Kgc" firstAttribute="top" secondItem="D5W-LJ-JY7" secondAttribute="top" id="ReT-9l-Xfb"/>
+                                        <constraint firstItem="SBI-bp-6L7" firstAttribute="top" secondItem="Aoi-0o-Kgc" secondAttribute="bottom" id="XoX-zr-d9I"/>
+                                        <constraint firstItem="WjH-Bd-BMW" firstAttribute="centerX" secondItem="D5W-LJ-JY7" secondAttribute="centerX" id="aGd-Lv-g5A"/>
+                                        <constraint firstAttribute="height" constant="49" id="ia5-AZ-cAy"/>
+                                        <constraint firstItem="WjH-Bd-BMW" firstAttribute="leading" secondItem="Biz-SS-Gww" secondAttribute="trailing" id="ocQ-IX-urD"/>
+                                        <constraint firstItem="Biz-SS-Gww" firstAttribute="top" secondItem="Aoi-0o-Kgc" secondAttribute="bottom" id="ulz-iM-zNy"/>
+                                        <constraint firstAttribute="bottom" secondItem="WjH-Bd-BMW" secondAttribute="bottom" id="xic-J7-sKc"/>
+                                        <constraint firstAttribute="bottom" secondItem="SBI-bp-6L7" secondAttribute="bottom" id="zPq-nd-gLN"/>
+                                    </constraints>
+                                </view>
+                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwM-Yh-oqC">
+                                    <connections>
+                                        <outlet property="dataSource" destination="iN0-l3-epB" id="yXo-TZ-V5i"/>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="ZDW-e5-3iG"/>
+                                    </connections>
+                                </pickerView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lue-8Z-TwG">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="D5W-LJ-JY7" firstAttribute="leading" secondItem="9G6-rs-6WL" secondAttribute="leading" id="2ZY-0k-8yH"/>
+                                <constraint firstAttribute="bottom" secondItem="D5W-LJ-JY7" secondAttribute="bottom" id="725-XJ-JBh"/>
+                                <constraint firstItem="D5W-LJ-JY7" firstAttribute="top" secondItem="lwM-Yh-oqC" secondAttribute="bottom" id="U1i-s3-hEC"/>
+                                <constraint firstItem="lwM-Yh-oqC" firstAttribute="top" secondItem="lue-8Z-TwG" secondAttribute="bottom" id="VcD-VV-wYk"/>
+                                <constraint firstItem="lue-8Z-TwG" firstAttribute="top" secondItem="9G6-rs-6WL" secondAttribute="top" id="WIF-Dg-Bvk"/>
+                                <constraint firstAttribute="trailing" secondItem="D5W-LJ-JY7" secondAttribute="trailing" id="WbR-jR-L4w"/>
+                                <constraint firstAttribute="trailing" secondItem="lwM-Yh-oqC" secondAttribute="trailing" id="ezv-zS-KyC"/>
+                                <constraint firstItem="lue-8Z-TwG" firstAttribute="centerX" secondItem="9G6-rs-6WL" secondAttribute="centerX" id="kGF-QE-9Sf"/>
+                                <constraint firstItem="lwM-Yh-oqC" firstAttribute="leading" secondItem="9G6-rs-6WL" secondAttribute="leading" id="sBm-wO-MbO"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop" translatesAutoresizingMaskIntoConstraints="NO" id="c5u-Tr-0rf"/>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9G6-rs-6WL" secondAttribute="bottom" id="CxU-E2-N5d"/>
+                        <constraint firstAttribute="trailing" secondItem="c5u-Tr-0rf" secondAttribute="trailing" id="G0f-WB-EYl"/>
+                        <constraint firstAttribute="trailing" secondItem="9G6-rs-6WL" secondAttribute="trailing" id="KDj-Qc-ybL"/>
+                        <constraint firstItem="9G6-rs-6WL" firstAttribute="top" secondItem="c5u-Tr-0rf" secondAttribute="bottom" id="dHh-RB-JEY"/>
+                        <constraint firstItem="c5u-Tr-0rf" firstAttribute="top" secondItem="W4J-Yk-NRa" secondAttribute="top" id="gX6-ym-D7W"/>
+                        <constraint firstItem="9G6-rs-6WL" firstAttribute="leading" secondItem="W4J-Yk-NRa" secondAttribute="leading" id="pGT-4l-y5f"/>
+                        <constraint firstItem="c5u-Tr-0rf" firstAttribute="leading" secondItem="W4J-Yk-NRa" secondAttribute="leading" id="z8q-fb-Z9N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="W4J-Yk-NRa" secondAttribute="trailing" id="BAr-e4-UG5"/>
+                <constraint firstItem="W4J-Yk-NRa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HQc-e2-JfG"/>
+                <constraint firstItem="W4J-Yk-NRa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" id="KYI-1b-ZmS"/>
+            </constraints>
+            <connections>
+                <outlet property="bottomLayoutConstraint" destination="KYI-1b-ZmS" id="e9g-J5-GBG"/>
+                <outlet property="componentView" destination="W4J-Yk-NRa" id="gqh-tf-DZy"/>
+                <outlet property="pickerView" destination="lwM-Yh-oqC" id="F0e-Oa-2Xw"/>
+            </connections>
+            <point key="canvasLocation" x="364.5" y="339.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line_1" width="1" height="1"/>
+        <image name="line_2" width="1" height="1"/>
+        <image name="pop" width="375" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

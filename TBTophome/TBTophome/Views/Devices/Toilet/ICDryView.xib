@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ICDryView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gVG-XO-RVj">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_1" translatesAutoresizingMaskIntoConstraints="NO" id="pWn-a9-vgd">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="nqU-y8-7Qm"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line_1" translatesAutoresizingMaskIntoConstraints="NO" id="mJg-pB-EZ7">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="PBr-fN-3aJ"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="operate_wind" translatesAutoresizingMaskIntoConstraints="NO" id="Oqo-Py-zVq">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Oqo-Py-zVq" secondAttribute="height" multiplier="1:1" id="qdc-5e-vLG"/>
+                                <constraint firstAttribute="width" constant="24" id="w2A-9F-maZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风温" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31s-T3-Tvx">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehh-UY-Izo" customClass="ICSlideView">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="operate_time_line_bg" translatesAutoresizingMaskIntoConstraints="NO" id="QD0-qh-EeA"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="operate_time_line" translatesAutoresizingMaskIntoConstraints="NO" id="RCY-Rj-NY9"/>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RA-gu-WOS">
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="2RA-gu-WOS" secondAttribute="height" multiplier="1:1" id="e6e-c8-3y0"/>
+                                    </constraints>
+                                    <state key="normal" image="light_slide_btn"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="RCY-Rj-NY9" firstAttribute="centerX" secondItem="QD0-qh-EeA" secondAttribute="centerX" id="6nk-dQ-bhw"/>
+                                <constraint firstItem="QD0-qh-EeA" firstAttribute="centerY" secondItem="ehh-UY-Izo" secondAttribute="centerY" id="7t1-Mf-sRR"/>
+                                <constraint firstItem="RCY-Rj-NY9" firstAttribute="centerY" secondItem="QD0-qh-EeA" secondAttribute="centerY" id="FIB-6I-k6K"/>
+                                <constraint firstItem="QD0-qh-EeA" firstAttribute="centerX" secondItem="ehh-UY-Izo" secondAttribute="centerX" id="FYt-mP-xIs"/>
+                                <constraint firstItem="RCY-Rj-NY9" firstAttribute="height" secondItem="QD0-qh-EeA" secondAttribute="height" id="Tnf-Qa-3Fb"/>
+                                <constraint firstItem="2RA-gu-WOS" firstAttribute="centerX" secondItem="RCY-Rj-NY9" secondAttribute="leading" id="lmF-xJ-NqA"/>
+                                <constraint firstItem="RCY-Rj-NY9" firstAttribute="width" secondItem="QD0-qh-EeA" secondAttribute="width" id="oQZ-V8-hEO"/>
+                                <constraint firstItem="2RA-gu-WOS" firstAttribute="centerY" secondItem="RCY-Rj-NY9" secondAttribute="centerY" id="p1w-Ad-i6Y"/>
+                                <constraint firstItem="QD0-qh-EeA" firstAttribute="width" secondItem="ehh-UY-Izo" secondAttribute="height" multiplier="247:55" id="rcY-Tx-2yE"/>
+                                <constraint firstItem="2RA-gu-WOS" firstAttribute="width" secondItem="ehh-UY-Izo" secondAttribute="height" multiplier="2:5" id="zDE-hZ-cQ1"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="thumbBt" destination="2RA-gu-WOS" id="nH1-9L-wEb"/>
+                                <outlet property="trackImageView" destination="RCY-Rj-NY9" id="SCs-Af-JMw"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="31s-T3-Tvx" firstAttribute="leading" secondItem="Oqo-Py-zVq" secondAttribute="trailing" constant="8" id="3IU-Et-dZN"/>
+                        <constraint firstItem="Oqo-Py-zVq" firstAttribute="leading" secondItem="gVG-XO-RVj" secondAttribute="leading" constant="15" id="3jV-gd-TgD"/>
+                        <constraint firstItem="ehh-UY-Izo" firstAttribute="leading" secondItem="31s-T3-Tvx" secondAttribute="trailing" constant="8" id="5rF-Rw-aji"/>
+                        <constraint firstAttribute="trailing" secondItem="mJg-pB-EZ7" secondAttribute="trailing" constant="15" id="Ai2-UK-Cto"/>
+                        <constraint firstItem="mJg-pB-EZ7" firstAttribute="top" secondItem="Oqo-Py-zVq" secondAttribute="bottom" constant="20" id="C3B-iJ-sDl"/>
+                        <constraint firstItem="31s-T3-Tvx" firstAttribute="centerY" secondItem="Oqo-Py-zVq" secondAttribute="centerY" id="Cv9-XP-VTM"/>
+                        <constraint firstItem="mJg-pB-EZ7" firstAttribute="leading" secondItem="gVG-XO-RVj" secondAttribute="leading" constant="15" id="JZh-Qy-6BS"/>
+                        <constraint firstItem="pWn-a9-vgd" firstAttribute="leading" secondItem="gVG-XO-RVj" secondAttribute="leading" id="KOq-gI-OQn"/>
+                        <constraint firstItem="ehh-UY-Izo" firstAttribute="centerY" secondItem="Oqo-Py-zVq" secondAttribute="centerY" id="NkR-vb-EPB"/>
+                        <constraint firstAttribute="width" secondItem="gVG-XO-RVj" secondAttribute="height" multiplier="375:148" id="RWK-lb-uVo"/>
+                        <constraint firstAttribute="trailing" secondItem="pWn-a9-vgd" secondAttribute="trailing" id="Uuv-IZ-MQJ"/>
+                        <constraint firstItem="pWn-a9-vgd" firstAttribute="top" secondItem="gVG-XO-RVj" secondAttribute="top" id="lPl-hZ-zwn"/>
+                        <constraint firstAttribute="trailing" secondItem="ehh-UY-Izo" secondAttribute="trailing" constant="15" id="ogH-HN-Xu6"/>
+                        <constraint firstItem="mJg-pB-EZ7" firstAttribute="centerY" secondItem="gVG-XO-RVj" secondAttribute="centerY" multiplier="198:148" id="qfN-0A-7gu"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV8-0a-zwk">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rV8-0a-zwk" secondAttribute="height" multiplier="1:1" id="VXM-6m-UgF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="调节" backgroundImage="tolit_slide_up_normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="disabled" backgroundImage="tolit_slide_up_disable"/>
+                    <state key="selected" backgroundImage="tolit_slide_down_normal"/>
+                    <connections>
+                        <action selector="slideDownAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="jdG-RX-pKG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rV8-0a-zwk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0eu-Cp-UId"/>
+                <constraint firstAttribute="bottom" secondItem="gVG-XO-RVj" secondAttribute="bottom" id="Bm1-0c-Jwz"/>
+                <constraint firstItem="gVG-XO-RVj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="H4x-c6-EJp"/>
+                <constraint firstAttribute="trailing" secondItem="gVG-XO-RVj" secondAttribute="trailing" id="ORS-G3-cl3"/>
+                <constraint firstItem="rV8-0a-zwk" firstAttribute="centerY" secondItem="gVG-XO-RVj" secondAttribute="top" id="a9r-3W-5xo"/>
+                <constraint firstItem="rV8-0a-zwk" firstAttribute="height" secondItem="gVG-XO-RVj" secondAttribute="height" multiplier="64:148" id="b79-sl-fLZ"/>
+                <constraint firstItem="gVG-XO-RVj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dHF-RP-HSl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="Bm1-0c-Jwz" id="Dud-eM-y4H"/>
+                <outlet property="controlView" destination="gVG-XO-RVj" id="DrL-WL-Bq3"/>
+                <outlet property="drySlideView" destination="ehh-UY-Izo" id="8T0-r8-ksY"/>
+                <outlet property="slideButton" destination="rV8-0a-zwk" id="7hd-7i-ADm"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="light_slide_btn" width="22" height="22"/>
+        <image name="line_1" width="1" height="1"/>
+        <image name="operate_time_line" width="247" height="7"/>
+        <image name="operate_time_line_bg" width="247" height="7"/>
+        <image name="operate_wind" width="24" height="24"/>
+        <image name="tolit_slide_down_normal" width="64" height="64"/>
+        <image name="tolit_slide_up_disable" width="64" height="64"/>
+        <image name="tolit_slide_up_normal" width="64" height="64"/>
+    </resources>
+</document>

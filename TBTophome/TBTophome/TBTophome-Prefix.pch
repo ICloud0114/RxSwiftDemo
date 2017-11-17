@@ -1,0 +1,53 @@
+//
+//  TBTophome.pch
+//  TBTophome
+//
+//  Created by Topband on 2016/12/28.
+//  Copyright © 2016年 Topband. All rights reserved.
+//
+
+#ifndef TBTophome_pch
+#define TBTophome_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "FMDatabase.h"
+#import "FMResultSet.h"
+#import "GCDAsyncSocket.h"
+#import "GCDAsyncUdpSocket.h"
+#import "Reachability.h"
+#import "NSObject+MJKeyValue.h"
+#import <HomeMateSDK/HomeMateSDK.h>
+
+#import "UIView+Rect.h"
+#import "GlobalFunc.h"
+#import "UIImage+AppImg.h"
+#endif /* TBTophome_pch */
+
+#ifdef DEBUG
+
+#define TBLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
+
+#else
+
+#define TBLog(...) ;
+
+#endif
+
+#define TBMainScreenBounds [UIScreen mainScreen].bounds
+#define TBScreenWidth TBMainScreenBounds.size.width
+#define TBScreenHeight TBMainScreenBounds.size.height
+
+#define Unequal_Assign(x, value) \
+{\
+    if (self.x != value) { self.x = value; }\
+}
+
+#define Self_Property_Assign(x, value) \
+{\
+    self.x = value;\
+}
+
+#define LFLocalizableString(key, comment) (NSLocalizedString(key, comment))
+//(([[[NSLocale preferredLanguages] objectAtIndex:0] hasPrefix:@"zh-Hans"])?([[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"zh-Hans" ofType:@"lproj"]] localizedStringForKey:key value:@"" table:@"localizable"]):([[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"en" ofType:@"lproj"]] localizedStringForKey:key value:@"" table:@"localizable"]))

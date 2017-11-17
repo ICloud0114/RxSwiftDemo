@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LFCoffeeWorkingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preheat_loading" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-pR-B61">
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wbj-pR-B61" secondAttribute="height" multiplier="1:1" id="CzU-2U-R8g"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIl-xC-J86">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="水量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q1-hJ-WU4">
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小杯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhW-DH-TvI">
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.070588235294117646" green="0.63529411764705879" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="PhW-DH-TvI" firstAttribute="centerX" secondItem="SIl-xC-J86" secondAttribute="centerX" id="KCj-ja-3SL"/>
+                        <constraint firstItem="PhW-DH-TvI" firstAttribute="centerY" secondItem="SIl-xC-J86" secondAttribute="centerY" constant="5" id="Yd3-3n-KIU"/>
+                        <constraint firstItem="8Q1-hJ-WU4" firstAttribute="centerX" secondItem="SIl-xC-J86" secondAttribute="centerX" id="cUI-Dk-4ak"/>
+                        <constraint firstItem="PhW-DH-TvI" firstAttribute="top" secondItem="8Q1-hJ-WU4" secondAttribute="bottom" constant="10" id="yJl-8J-hoE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-Tt-2DZ">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="低温" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aG-pa-XEU">
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.070588235289999995" green="0.63529411759999999" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK3-E2-Qmd">
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="2aG-pa-XEU" firstAttribute="centerY" secondItem="EYa-Tt-2DZ" secondAttribute="centerY" constant="5" id="0RN-0T-NXV"/>
+                        <constraint firstItem="2aG-pa-XEU" firstAttribute="centerX" secondItem="EYa-Tt-2DZ" secondAttribute="centerX" id="TnO-P3-0KK"/>
+                        <constraint firstItem="TK3-E2-Qmd" firstAttribute="centerX" secondItem="EYa-Tt-2DZ" secondAttribute="centerX" id="Yot-fY-6y3"/>
+                        <constraint firstItem="2aG-pa-XEU" firstAttribute="top" secondItem="TK3-E2-Qmd" secondAttribute="bottom" constant="10" id="aLY-BP-PwJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SIl-xC-J86" firstAttribute="bottom" secondItem="wbj-pR-B61" secondAttribute="bottom" id="4o8-P9-kT3"/>
+                <constraint firstItem="EYa-Tt-2DZ" firstAttribute="top" secondItem="wbj-pR-B61" secondAttribute="top" id="5Vy-kA-H2W"/>
+                <constraint firstItem="wbj-pR-B61" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JIa-Qm-riv"/>
+                <constraint firstItem="EYa-Tt-2DZ" firstAttribute="leading" secondItem="SIl-xC-J86" secondAttribute="trailing" id="cl1-cc-xf7"/>
+                <constraint firstItem="SIl-xC-J86" firstAttribute="top" secondItem="wbj-pR-B61" secondAttribute="top" id="gmG-yx-Kwz"/>
+                <constraint firstItem="wbj-pR-B61" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hVh-Rl-Qfq"/>
+                <constraint firstItem="EYa-Tt-2DZ" firstAttribute="bottom" secondItem="wbj-pR-B61" secondAttribute="bottom" id="inj-nQ-ORc"/>
+                <constraint firstItem="EYa-Tt-2DZ" firstAttribute="trailing" secondItem="wbj-pR-B61" secondAttribute="trailing" id="oUG-8o-AUY"/>
+                <constraint firstItem="SIl-xC-J86" firstAttribute="width" secondItem="EYa-Tt-2DZ" secondAttribute="width" id="sS3-ai-JEQ"/>
+                <constraint firstItem="wbj-pR-B61" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="157:245" id="vuU-iR-abk"/>
+                <constraint firstItem="SIl-xC-J86" firstAttribute="leading" secondItem="wbj-pR-B61" secondAttribute="leading" id="wpO-fb-AiO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loading" destination="wbj-pR-B61" id="JnY-tx-rtM"/>
+                <outlet property="temperatureLabel" destination="2aG-pa-XEU" id="4re-rK-0cV"/>
+                <outlet property="waterAmountLabel" destination="PhW-DH-TvI" id="edU-pW-Cpn"/>
+            </connections>
+            <point key="canvasLocation" x="234.5" y="339.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="preheat_loading" width="157" height="157"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  TBTophome
+
+  Created by Topband on 2017/4/27.
+  Copyright © 2017年 Topband. All rights reserved.
+*/
+"Sign Up" = "Sign Up";
+"Forgot Password" = "Forgot Password";
+"Get verification code" = "Get verification code";
+"Login success" = "Login success";
+"Login..." = "Login...";
+"Devices" = "Devices";
+"My Center" = "My Center";
+"My Account" = "My Account";
+"Current version" = "Current version";
+"Done" = "Done";
+"Cancel" = "Cancel";
+"Modify Password" = "Modify Password";
+"Modify Nickname" = "Modify Nickname";
+"Add Device" = "Add Device";
+"Register" = "Register";
+"Setting Device Name" = "Setting Device Name";
+"Enter device name" = "Enter device name";
+"Device offline" = "Device offline...";
+
+
+"Closed" = "Closed";
+"Opened" = "Opened";
+
+//电磁炉
+"Max Power" = "Max Power";
+"Heat Pre" = "Heat Pre";
+"Timer" = "Timer";
+"Locking" = "Locking";

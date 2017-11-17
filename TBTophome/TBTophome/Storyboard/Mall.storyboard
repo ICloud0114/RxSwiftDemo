@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F6F-QF-01y">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mall View Controller-->
+        <scene sceneID="b7W-JS-Cjk">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="F6F-QF-01y" customClass="TBMallViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qRd-Ti-22L"/>
+                        <viewControllerLayoutGuide type="bottom" id="UQr-FZ-LEX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GKZ-k0-crr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeE-EW-orQ">
+                                <subviews>
+                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="603" translatesAutoresizingMaskIntoConstraints="NO" id="anI-p1-RAI">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37z-Rn-W3m">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W96-CE-A6z">
+                                                        <state key="normal" backgroundImage="mall_JD"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="W96-CE-A6z" firstAttribute="top" secondItem="37z-Rn-W3m" secondAttribute="top" id="3UF-hc-BXX"/>
+                                                    <constraint firstItem="W96-CE-A6z" firstAttribute="leading" secondItem="37z-Rn-W3m" secondAttribute="leading" id="8e2-A6-iGl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="W96-CE-A6z" secondAttribute="trailing" id="BmS-3e-uje"/>
+                                                    <constraint firstAttribute="bottom" secondItem="W96-CE-A6z" secondAttribute="bottom" id="EEh-Lq-05l"/>
+                                                    <constraint firstAttribute="width" secondItem="37z-Rn-W3m" secondAttribute="height" multiplier="173:90" id="WpZ-xI-ETc"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCy-Jq-29C">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMn-QH-ZGu">
+                                                        <state key="normal" backgroundImage="mall_TB"/>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="NMn-QH-ZGu" firstAttribute="top" secondItem="WCy-Jq-29C" secondAttribute="top" id="7bK-x6-Fcb"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NMn-QH-ZGu" secondAttribute="trailing" id="B9A-fI-vSJ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NMn-QH-ZGu" secondAttribute="bottom" id="RFu-6B-mwk"/>
+                                                    <constraint firstItem="NMn-QH-ZGu" firstAttribute="leading" secondItem="WCy-Jq-29C" secondAttribute="leading" id="nLp-gT-trV"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="37z-Rn-W3m" firstAttribute="leading" secondItem="anI-p1-RAI" secondAttribute="leading" constant="15" id="D5V-22-axw"/>
+                                            <constraint firstItem="WCy-Jq-29C" firstAttribute="width" secondItem="WCy-Jq-29C" secondAttribute="height" multiplier="173:90" id="cDT-Yv-uZk"/>
+                                            <constraint firstItem="WCy-Jq-29C" firstAttribute="leading" secondItem="anI-p1-RAI" secondAttribute="leading" constant="15" id="jYM-Mi-SnU"/>
+                                            <constraint firstAttribute="trailing" secondItem="37z-Rn-W3m" secondAttribute="trailing" constant="14" id="klG-Y5-Pxh"/>
+                                            <constraint firstItem="37z-Rn-W3m" firstAttribute="top" secondItem="anI-p1-RAI" secondAttribute="top" constant="15" id="rW5-fk-6gL"/>
+                                            <constraint firstAttribute="bottom" secondItem="WCy-Jq-29C" secondAttribute="bottom" priority="750" constant="15" id="sHR-ba-mph"/>
+                                            <constraint firstItem="WCy-Jq-29C" firstAttribute="top" secondItem="37z-Rn-W3m" secondAttribute="bottom" constant="15" id="vRp-1r-6fL"/>
+                                            <constraint firstAttribute="trailing" secondItem="WCy-Jq-29C" secondAttribute="trailing" constant="14" id="z7I-1l-vR3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="anI-p1-RAI" firstAttribute="width" secondItem="YeE-EW-orQ" secondAttribute="width" id="46n-xG-1xz"/>
+                                    <constraint firstAttribute="trailing" secondItem="anI-p1-RAI" secondAttribute="trailing" id="CiG-x4-JiB"/>
+                                    <constraint firstItem="anI-p1-RAI" firstAttribute="top" secondItem="YeE-EW-orQ" secondAttribute="top" id="DY6-Mg-0yQ"/>
+                                    <constraint firstItem="anI-p1-RAI" firstAttribute="height" relation="greaterThanOrEqual" secondItem="YeE-EW-orQ" secondAttribute="height" constant="1" id="m60-pl-DXz"/>
+                                    <constraint firstItem="anI-p1-RAI" firstAttribute="leading" secondItem="YeE-EW-orQ" secondAttribute="leading" id="pUq-jF-iPn"/>
+                                    <constraint firstAttribute="bottom" secondItem="anI-p1-RAI" secondAttribute="bottom" id="uOw-SR-zDA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YeE-EW-orQ" firstAttribute="leading" secondItem="GKZ-k0-crr" secondAttribute="leading" id="Qby-q8-Fkt"/>
+                            <constraint firstItem="UQr-FZ-LEX" firstAttribute="top" secondItem="YeE-EW-orQ" secondAttribute="bottom" id="Swy-tl-ZGe"/>
+                            <constraint firstItem="YeE-EW-orQ" firstAttribute="top" secondItem="qRd-Ti-22L" secondAttribute="bottom" id="tP2-z9-Svl"/>
+                            <constraint firstAttribute="trailing" secondItem="YeE-EW-orQ" secondAttribute="trailing" id="uD4-F9-keB"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ar6-Hj-SYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162.40000000000001" y="223.53823088455775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mall_JD" width="345" height="180"/>
+        <image name="mall_TB" width="345" height="180"/>
+    </resources>
+</document>

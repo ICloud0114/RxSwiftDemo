@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="TBAddRemotesTipView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIi-dn-WHY">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请至少尝试3个按键，并查看家电是否正确响应。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pk3-q1-ZH5">
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDO-w1-q6m">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="xDO-w1-q6m" secondAttribute="height" multiplier="1:1" id="Ddr-eu-dDH"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="info_close"/>
+                            <connections>
+                                <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="NZX-oB-IiK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.99215686270000003" blue="0.90980392160000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="pk3-q1-ZH5" firstAttribute="leading" secondItem="vIi-dn-WHY" secondAttribute="leading" constant="15" id="3wG-4H-EMK"/>
+                        <constraint firstAttribute="bottom" secondItem="xDO-w1-q6m" secondAttribute="bottom" id="ARl-Ot-tOP"/>
+                        <constraint firstItem="pk3-q1-ZH5" firstAttribute="centerY" secondItem="vIi-dn-WHY" secondAttribute="centerY" id="HEh-TS-8dK"/>
+                        <constraint firstAttribute="height" constant="30" id="IjQ-Al-xGi"/>
+                        <constraint firstItem="xDO-w1-q6m" firstAttribute="top" secondItem="vIi-dn-WHY" secondAttribute="top" id="Ter-bB-hYH"/>
+                        <constraint firstAttribute="trailing" secondItem="xDO-w1-q6m" secondAttribute="trailing" id="yPZ-h8-hAO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vIi-dn-WHY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-30" id="2f3-0f-jVJ"/>
+                <constraint firstItem="vIi-dn-WHY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="q0q-OM-Jmk"/>
+                <constraint firstAttribute="trailing" secondItem="vIi-dn-WHY" secondAttribute="trailing" id="xdM-in-4UJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="top" destination="2f3-0f-jVJ" id="aqs-TT-zog"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="info_close" width="30" height="30"/>
+    </resources>
+</document>

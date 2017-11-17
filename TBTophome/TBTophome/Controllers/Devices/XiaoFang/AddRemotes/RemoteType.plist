@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>remote_controller</key>
+		<string>TBAddAircRemoteViewController</string>
+		<key>remote_view</key>
+		<string>TBAircView</string>
+		<key>remote_icon</key>
+		<string>icon_conditioner_1</string>
+		<key>reomte_name</key>
+		<string>格力空调_壁式</string>
+		<key>remote_type</key>
+		<integer>0</integer>
+	</dict>
+	<dict>
+		<key>remote_controller</key>
+		<string>TBAddAircRemoteViewController</string>
+		<key>remote_view</key>
+		<string>TBAircView</string>
+		<key>remote_icon</key>
+		<string>icon_conditioner_2</string>
+		<key>reomte_name</key>
+		<string>格力空调_柜式</string>
+		<key>remote_type</key>
+		<integer>1</integer>
+	</dict>
+</array>
+</plist>
