@@ -92,6 +92,14 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbo-v8-taX" customClass="ZYSlideView" customModule="RxExample_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="63" y="9" width="240" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="operate_time_line"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -401,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrE-1e-Hbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90" y="134"/>
+            <point key="canvasLocation" x="90" y="133.09859154929578"/>
         </scene>
     </scenes>
     <resources>
@@ -436,6 +444,7 @@
         <image name="info_operate_temperature" width="20" height="20"/>
         <image name="info_operate_time" width="20" height="20"/>
         <image name="line_1" width="16" height="16"/>
+        <image name="operate_time_line" width="247" height="7"/>
         <image name="tolit_loading_1" width="94" height="94"/>
         <image name="tolit_slide_down_normal2" width="64" height="64"/>
         <image name="tolit_slide_up_disable2" width="64" height="64"/>

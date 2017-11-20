@@ -12,6 +12,13 @@
 		075F13101B4E9D5A000D7861 /* APIWrappersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F130F1B4E9D5A000D7861 /* APIWrappersViewController.swift */; };
 		07A5C3DB1B70B703001EFE5C /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5C3DA1B70B703001EFE5C /* CalculatorViewController.swift */; };
 		07E3C2331B03605B0010338D /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E3C2321B03605B0010338D /* Dependencies.swift */; };
+		1A1A0C2B1FC2BCFA0067BE18 /* ICToiletControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C1D1FC2BCF70067BE18 /* ICToiletControlView.m */; };
+		1A1A0C2C1FC2BCFA0067BE18 /* ICToiletShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C1E1FC2BCF80067BE18 /* ICToiletShowView.m */; };
+		1A1A0C2D1FC2BCFA0067BE18 /* ICSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C201FC2BCF80067BE18 /* ICSlideView.m */; };
+		1A1A0C2E1FC2BCFA0067BE18 /* ICToiletBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C211FC2BCF80067BE18 /* ICToiletBottomView.m */; };
+		1A1A0C2F1FC2BCFA0067BE18 /* ICNormalCleanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */; };
+		1A1A0C301FC2BCFA0067BE18 /* ICDryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C281FC2BCF90067BE18 /* ICDryView.m */; };
+		1A1A0C321FC2DBBF0067BE18 /* ZYSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */; };
 		1A4428591FBE8CE000CD0600 /* Toilet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4428581FBE8CE000CD0600 /* Toilet.storyboard */; };
 		1AEEE4801FBEC45700D9AA88 /* TBToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */; };
 		1AEEE4911FBEC4D300D9AA88 /* ToiletControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */; };
@@ -434,6 +441,22 @@
 		075F130F1B4E9D5A000D7861 /* APIWrappersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrappersViewController.swift; sourceTree = "<group>"; };
 		07A5C3DA1B70B703001EFE5C /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		07E3C2321B03605B0010338D /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dependencies.swift; path = Examples/Dependencies.swift; sourceTree = "<group>"; };
+		1A1A0C0D1FC2BCF50067BE18 /* RxExample-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxExample-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A1A0C1D1FC2BCF70067BE18 /* ICToiletControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICToiletControlView.m; sourceTree = "<group>"; };
+		1A1A0C1E1FC2BCF80067BE18 /* ICToiletShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICToiletShowView.m; sourceTree = "<group>"; };
+		1A1A0C1F1FC2BCF80067BE18 /* ICNormalCleanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICNormalCleanView.xib; sourceTree = "<group>"; };
+		1A1A0C201FC2BCF80067BE18 /* ICSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICSlideView.m; sourceTree = "<group>"; };
+		1A1A0C211FC2BCF80067BE18 /* ICToiletBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICToiletBottomView.m; sourceTree = "<group>"; };
+		1A1A0C221FC2BCF80067BE18 /* ICDryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICDryView.xib; sourceTree = "<group>"; };
+		1A1A0C231FC2BCF90067BE18 /* ICToiletControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletControlView.h; sourceTree = "<group>"; };
+		1A1A0C241FC2BCF90067BE18 /* ICToiletShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletShowView.h; sourceTree = "<group>"; };
+		1A1A0C251FC2BCF90067BE18 /* ICDryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICDryView.h; sourceTree = "<group>"; };
+		1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNormalCleanView.m; sourceTree = "<group>"; };
+		1A1A0C271FC2BCF90067BE18 /* ICNormalCleanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICNormalCleanView.h; sourceTree = "<group>"; };
+		1A1A0C281FC2BCF90067BE18 /* ICDryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICDryView.m; sourceTree = "<group>"; };
+		1A1A0C291FC2BCF90067BE18 /* ICSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICSlideView.h; sourceTree = "<group>"; };
+		1A1A0C2A1FC2BCF90067BE18 /* ICToiletBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletBottomView.h; sourceTree = "<group>"; };
+		1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYSlideView.swift; sourceTree = "<group>"; };
 		1A4428581FBE8CE000CD0600 /* Toilet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Toilet.storyboard; sourceTree = "<group>"; };
 		1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBToiletViewController.swift; sourceTree = "<group>"; };
 		1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletControlView.swift; sourceTree = "<group>"; };
@@ -660,6 +683,22 @@
 				1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */,
 				1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */,
 				1AEEE4941FBEC4FF00D9AA88 /* ToiletBottomView.swift */,
+				1A1A0C251FC2BCF90067BE18 /* ICDryView.h */,
+				1A1A0C281FC2BCF90067BE18 /* ICDryView.m */,
+				1A1A0C221FC2BCF80067BE18 /* ICDryView.xib */,
+				1A1A0C271FC2BCF90067BE18 /* ICNormalCleanView.h */,
+				1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */,
+				1A1A0C1F1FC2BCF80067BE18 /* ICNormalCleanView.xib */,
+				1A1A0C291FC2BCF90067BE18 /* ICSlideView.h */,
+				1A1A0C201FC2BCF80067BE18 /* ICSlideView.m */,
+				1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */,
+				1A1A0C2A1FC2BCF90067BE18 /* ICToiletBottomView.h */,
+				1A1A0C211FC2BCF80067BE18 /* ICToiletBottomView.m */,
+				1A1A0C231FC2BCF90067BE18 /* ICToiletControlView.h */,
+				1A1A0C1D1FC2BCF70067BE18 /* ICToiletControlView.m */,
+				1A1A0C241FC2BCF90067BE18 /* ICToiletShowView.h */,
+				1A1A0C1E1FC2BCF80067BE18 /* ICToiletShowView.m */,
+				1A1A0C0D1FC2BCF50067BE18 /* RxExample-iOS-Bridging-Header.h */,
 			);
 			path = Toilet;
 			sourceTree = "<group>";
@@ -1212,7 +1251,7 @@
 					C83366DC1AD0293800C668A7 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 783T66X79Y;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					C849EF601C3190360048AC4A = {
 						CreatedOnToolsVersion = 7.2;
@@ -1534,6 +1573,7 @@
 				C864BADD1C3332F10083833C /* TableViewWithEditingCommandsViewController.swift in Sources */,
 				1AEEE4951FBEC4FF00D9AA88 /* ToiletBottomView.swift in Sources */,
 				C8477FEF1D29DE8C0074454A /* AnimatableSectionModel.swift in Sources */,
+				1A1A0C2E1FC2BCFA0067BE18 /* ICToiletBottomView.m in Sources */,
 				C822B1D91C14CBEA0088A01A /* Protocols.swift in Sources */,
 				C8BCD3E61C14A95E005F1280 /* NumbersViewController.swift in Sources */,
 				C849EF881C3195180048AC4A /* GithubSignupViewModel2.swift in Sources */,
@@ -1543,11 +1583,13 @@
 				C822B1E71C14E7250088A01A /* SimpleTableViewExampleSectionedViewController.swift in Sources */,
 				C83367251AD029AE00C668A7 /* ImageService.swift in Sources */,
 				C819DAE91ED0DDD50043A770 /* Version.swift in Sources */,
+				1A1A0C301FC2BCFA0067BE18 /* ICDryView.m in Sources */,
 				C84780001D29DE8C0074454A /* String+IdentifiableType.swift in Sources */,
 				C817727F1E7DEE5100EA679B /* GitHubSearchRepositories.swift in Sources */,
 				C86E2F471AE5A0CA00C31024 /* WikipediaSearchResult.swift in Sources */,
 				C8984CD11C36BC3E001E4272 /* NumberCell.swift in Sources */,
 				C8A2A2C81B4049E300F11F09 /* PseudoRandomGenerator.swift in Sources */,
+				1A1A0C2F1FC2BCFA0067BE18 /* ICNormalCleanView.m in Sources */,
 				C8D132151C42B54B00B59FFF /* UIImagePickerController+RxCreate.swift in Sources */,
 				252C9F781F14111800F5F951 /* SimplePickerViewExampleViewController.swift in Sources */,
 				C8477FF71D29DE8C0074454A /* Differentiator.swift in Sources */,
@@ -1557,6 +1599,7 @@
 				C8477FFF1D29DE8C0074454A /* SectionModelType.swift in Sources */,
 				C864BAE11C3332F10083833C /* User.swift in Sources */,
 				0744CDED1C4DB78600720FD2 /* GeolocationViewController.swift in Sources */,
+				1A1A0C2B1FC2BCFA0067BE18 /* ICToiletControlView.m in Sources */,
 				C83367231AD029AE00C668A7 /* Example.swift in Sources */,
 				C890A65D1AEC084100AFF7E6 /* ViewController.swift in Sources */,
 				C8477FFB1D29DE8C0074454A /* IntegerType+IdentifiableType.swift in Sources */,
@@ -1566,16 +1609,19 @@
 				1AEEE4931FBEC4EA00D9AA88 /* ToiletDisplayView.swift in Sources */,
 				075F13101B4E9D5A000D7861 /* APIWrappersViewController.swift in Sources */,
 				C84780051D29DE8C0074454A /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
+				1A1A0C321FC2DBBF0067BE18 /* ZYSlideView.swift in Sources */,
 				B18F3BE21BDB2E8F000AAC79 /* ReachabilityService.swift in Sources */,
 				B18F3BBC1BD92EC8000AAC79 /* Reachability.swift in Sources */,
 				07E3C2331B03605B0010338D /* Dependencies.swift in Sources */,
 				C8477FFA1D29DE8C0074454A /* IdentifiableValue.swift in Sources */,
+				1A1A0C2C1FC2BCFA0067BE18 /* ICToiletShowView.m in Sources */,
 				C849EF9C1C31A8750048AC4A /* String+URL.swift in Sources */,
 				C86E2F451AE5A0CA00C31024 /* WikipediaAPI.swift in Sources */,
 				C8DF92CD1B0B2F84009BCF9A /* AppDelegate.swift in Sources */,
 				C8477FF21D29DE8C0074454A /* AnimationConfiguration.swift in Sources */,
 				1AEEE4911FBEC4D300D9AA88 /* ToiletControlView.swift in Sources */,
 				C86E2F461AE5A0CA00C31024 /* WikipediaPage.swift in Sources */,
+				1A1A0C2D1FC2BCFA0067BE18 /* ICSlideView.m in Sources */,
 				C809E97D1BE697100058D948 /* UIImage+Extensions.swift in Sources */,
 				C8A2A2CB1B404A1200F11F09 /* Randomizer.swift in Sources */,
 				C8BCD3EA1C14B02A005F1280 /* SimpleValidationViewController.swift in Sources */,
@@ -1873,6 +1919,7 @@
 		C83367001AD0293900C668A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 783T66X79Y;
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
@@ -1882,12 +1929,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/Toilet/RxExample-iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C83367011AD0293900C668A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 783T66X79Y;
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
@@ -1897,7 +1948,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/Toilet/RxExample-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2092,6 +2145,7 @@
 		C8DF92EE1B0B3DFA009BCF9A /* Release-Tests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 783T66X79Y;
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
@@ -2101,7 +2155,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/Toilet/RxExample-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 			};
 			name = "Release-Tests";
 		};

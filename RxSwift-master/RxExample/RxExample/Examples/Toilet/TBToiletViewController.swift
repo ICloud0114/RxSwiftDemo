@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+@IBDesignable
 class TBToiletViewController: UIViewController {
-
+    
+    @IBInspectable var image: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
 
