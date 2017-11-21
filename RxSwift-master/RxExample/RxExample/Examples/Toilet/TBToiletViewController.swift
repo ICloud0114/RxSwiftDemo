@@ -7,13 +7,17 @@
 //
 
 import UIKit
-@IBDesignable
 class TBToiletViewController: UIViewController {
     
-    @IBInspectable var image: UIImage?
+    
+    @IBOutlet weak var sliderView: ZYSlideView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        sliderView.titles = ["1min","2min","3min","4min"]
+        sliderView.selectValue = {
+            value in
+            print("select \(value)")
+        }
         // Do any additional setup after loading the view.
     }
 

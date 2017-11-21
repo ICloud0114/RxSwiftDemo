@@ -93,11 +93,37 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dbo-v8-taX" customClass="ZYSlideView" customModule="RxExample_iOS" customModuleProvider="target">
-                                        <rect key="frame" x="63" y="9" width="240" height="59"/>
+                                        <rect key="frame" x="22" y="9" width="241" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="operate_time_line"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="current">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="thumbBackgroundColor">
+                                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                <color key="value" red="0.64313725489999995" green="0.43137254899999999" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDt-ei-vbq" customClass="ZYSlideView" customModule="RxExample_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="151" width="304" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="LMe-pD-OIx"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="count">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="current">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
@@ -105,6 +131,7 @@
                                 <constraints>
                                     <constraint firstItem="ywQ-Gq-VWi" firstAttribute="centerY" secondItem="JRg-Ie-3Es" secondAttribute="centerY" id="2L7-Uf-VMR"/>
                                     <constraint firstItem="iHv-Hb-V6q" firstAttribute="centerY" secondItem="VGU-p7-P1I" secondAttribute="centerY" id="44S-1c-Tzs"/>
+                                    <constraint firstItem="xDt-ei-vbq" firstAttribute="top" secondItem="JRg-Ie-3Es" secondAttribute="top" constant="151" id="4CB-ZV-THQ"/>
                                     <constraint firstItem="ocw-do-FkE" firstAttribute="centerY" secondItem="VGU-p7-P1I" secondAttribute="centerY" id="5hn-EG-U6q"/>
                                     <constraint firstItem="Hs9-NL-yR9" firstAttribute="leading" secondItem="iHv-Hb-V6q" secondAttribute="trailing" constant="6" id="6Mc-Jo-FxU"/>
                                     <constraint firstItem="If4-EC-6ql" firstAttribute="centerY" secondItem="TU0-Iu-63N" secondAttribute="centerY" id="6dC-je-mhZ"/>
@@ -114,9 +141,11 @@
                                     <constraint firstItem="ywQ-Gq-VWi" firstAttribute="centerX" secondItem="JRg-Ie-3Es" secondAttribute="centerX" id="Ajx-ID-N55"/>
                                     <constraint firstItem="nCk-lz-Cm1" firstAttribute="leading" secondItem="a6e-we-ZPV" secondAttribute="trailing" constant="6" id="B1l-NN-InP"/>
                                     <constraint firstItem="ocw-do-FkE" firstAttribute="leading" secondItem="Hs9-NL-yR9" secondAttribute="trailing" constant="8" id="Ccd-ii-FzJ"/>
+                                    <constraint firstItem="xDt-ei-vbq" firstAttribute="leading" secondItem="JRg-Ie-3Es" secondAttribute="leading" constant="8" id="F4r-yR-6GR"/>
                                     <constraint firstItem="VGU-p7-P1I" firstAttribute="leading" secondItem="JRg-Ie-3Es" secondAttribute="leading" constant="10" id="HqP-Ek-LAe"/>
                                     <constraint firstItem="If4-EC-6ql" firstAttribute="width" secondItem="If4-EC-6ql" secondAttribute="height" multiplier="139:115" id="HvJ-TY-DYX"/>
                                     <constraint firstItem="TU0-Iu-63N" firstAttribute="centerX" secondItem="JRg-Ie-3Es" secondAttribute="centerX" id="JvU-5z-9ZD"/>
+                                    <constraint firstAttribute="trailing" secondItem="xDt-ei-vbq" secondAttribute="trailing" constant="8" id="Le6-a5-ky7"/>
                                     <constraint firstItem="y5x-rw-ZO8" firstAttribute="leading" secondItem="VGU-p7-P1I" secondAttribute="trailing" constant="6" id="NDz-3d-nxW"/>
                                     <constraint firstItem="WeD-LD-e7I" firstAttribute="leading" secondItem="Ftg-b6-ySW" secondAttribute="trailing" constant="6" id="OBp-03-Z5V"/>
                                     <constraint firstItem="If4-EC-6ql" firstAttribute="height" secondItem="TU0-Iu-63N" secondAttribute="height" id="Y2s-fq-ygo"/>
@@ -406,6 +435,9 @@
                             <constraint firstItem="9ox-fc-UrS" firstAttribute="top" secondItem="JRg-Ie-3Es" secondAttribute="bottom" id="vr0-Mg-S4r"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sliderView" destination="dbo-v8-taX" id="0ki-HN-9aq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrE-1e-Hbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -444,7 +476,6 @@
         <image name="info_operate_temperature" width="20" height="20"/>
         <image name="info_operate_time" width="20" height="20"/>
         <image name="line_1" width="16" height="16"/>
-        <image name="operate_time_line" width="247" height="7"/>
         <image name="tolit_loading_1" width="94" height="94"/>
         <image name="tolit_slide_down_normal2" width="64" height="64"/>
         <image name="tolit_slide_up_disable2" width="64" height="64"/>
