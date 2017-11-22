@@ -17,9 +17,12 @@
 		1A1A0C2D1FC2BCFA0067BE18 /* ICSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C201FC2BCF80067BE18 /* ICSlideView.m */; };
 		1A1A0C2E1FC2BCFA0067BE18 /* ICToiletBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C211FC2BCF80067BE18 /* ICToiletBottomView.m */; };
 		1A1A0C2F1FC2BCFA0067BE18 /* ICNormalCleanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */; };
-		1A1A0C301FC2BCFA0067BE18 /* ICDryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C281FC2BCF90067BE18 /* ICDryView.m */; };
 		1A1A0C321FC2DBBF0067BE18 /* ZYSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */; };
 		1A4428591FBE8CE000CD0600 /* Toilet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4428581FBE8CE000CD0600 /* Toilet.storyboard */; };
+		1A5EBD391FC50BD6006D1FCA /* TBDryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */; };
+		1A5EBD491FC54A04006D1FCA /* TBDryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */; };
+		1A5EBD4A1FC54A1E006D1FCA /* TBNormalCleanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A0C1F1FC2BCF80067BE18 /* TBNormalCleanView.xib */; };
+		1A5EBD4C1FC5509A006D1FCA /* TBNormalCleanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */; };
 		1AEEE4801FBEC45700D9AA88 /* TBToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */; };
 		1AEEE4911FBEC4D300D9AA88 /* ToiletControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */; };
 		1AEEE4931FBEC4EA00D9AA88 /* ToiletDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */; };
@@ -444,20 +447,20 @@
 		1A1A0C0D1FC2BCF50067BE18 /* RxExample-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxExample-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A1A0C1D1FC2BCF70067BE18 /* ICToiletControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICToiletControlView.m; sourceTree = "<group>"; };
 		1A1A0C1E1FC2BCF80067BE18 /* ICToiletShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICToiletShowView.m; sourceTree = "<group>"; };
-		1A1A0C1F1FC2BCF80067BE18 /* ICNormalCleanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICNormalCleanView.xib; sourceTree = "<group>"; };
+		1A1A0C1F1FC2BCF80067BE18 /* TBNormalCleanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBNormalCleanView.xib; sourceTree = "<group>"; };
 		1A1A0C201FC2BCF80067BE18 /* ICSlideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICSlideView.m; sourceTree = "<group>"; };
 		1A1A0C211FC2BCF80067BE18 /* ICToiletBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICToiletBottomView.m; sourceTree = "<group>"; };
-		1A1A0C221FC2BCF80067BE18 /* ICDryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ICDryView.xib; sourceTree = "<group>"; };
+		1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TBDryView.xib; sourceTree = "<group>"; };
 		1A1A0C231FC2BCF90067BE18 /* ICToiletControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletControlView.h; sourceTree = "<group>"; };
 		1A1A0C241FC2BCF90067BE18 /* ICToiletShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletShowView.h; sourceTree = "<group>"; };
-		1A1A0C251FC2BCF90067BE18 /* ICDryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICDryView.h; sourceTree = "<group>"; };
 		1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICNormalCleanView.m; sourceTree = "<group>"; };
 		1A1A0C271FC2BCF90067BE18 /* ICNormalCleanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICNormalCleanView.h; sourceTree = "<group>"; };
-		1A1A0C281FC2BCF90067BE18 /* ICDryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ICDryView.m; sourceTree = "<group>"; };
 		1A1A0C291FC2BCF90067BE18 /* ICSlideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICSlideView.h; sourceTree = "<group>"; };
 		1A1A0C2A1FC2BCF90067BE18 /* ICToiletBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletBottomView.h; sourceTree = "<group>"; };
 		1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYSlideView.swift; sourceTree = "<group>"; };
 		1A4428581FBE8CE000CD0600 /* Toilet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Toilet.storyboard; sourceTree = "<group>"; };
+		1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDryView.swift; sourceTree = "<group>"; };
+		1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBNormalCleanView.swift; sourceTree = "<group>"; };
 		1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBToiletViewController.swift; sourceTree = "<group>"; };
 		1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletControlView.swift; sourceTree = "<group>"; };
 		1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDisplayView.swift; sourceTree = "<group>"; };
@@ -683,12 +686,12 @@
 				1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */,
 				1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */,
 				1AEEE4941FBEC4FF00D9AA88 /* ToiletBottomView.swift */,
-				1A1A0C251FC2BCF90067BE18 /* ICDryView.h */,
-				1A1A0C281FC2BCF90067BE18 /* ICDryView.m */,
-				1A1A0C221FC2BCF80067BE18 /* ICDryView.xib */,
+				1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */,
+				1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */,
 				1A1A0C271FC2BCF90067BE18 /* ICNormalCleanView.h */,
 				1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */,
-				1A1A0C1F1FC2BCF80067BE18 /* ICNormalCleanView.xib */,
+				1A1A0C1F1FC2BCF80067BE18 /* TBNormalCleanView.xib */,
+				1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */,
 				1A1A0C291FC2BCF90067BE18 /* ICSlideView.h */,
 				1A1A0C201FC2BCF80067BE18 /* ICSlideView.m */,
 				1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */,
@@ -1463,6 +1466,7 @@
 			files = (
 				1A4428591FBE8CE000CD0600 /* Toilet.storyboard in Resources */,
 				C8C46DAB1B47F7110020D71E /* WikipediaSearchCell.xib in Resources */,
+				1A5EBD4A1FC54A1E006D1FCA /* TBNormalCleanView.xib in Resources */,
 				AE51C1E31DE73667005BAF5F /* WikipediaSearch.storyboard in Resources */,
 				AE51C1D71DE73623005BAF5F /* Numbers.storyboard in Resources */,
 				AE51C1CF1DE735FD005BAF5F /* GitHubSearchRepositories.storyboard in Resources */,
@@ -1477,6 +1481,7 @@
 				AE51C1C91DE735D8005BAF5F /* APIWrappers.storyboard in Resources */,
 				C8DF92EA1B0B38C0009BCF9A /* Images.xcassets in Resources */,
 				C8DF92E41B0B32DA009BCF9A /* Main.storyboard in Resources */,
+				1A5EBD491FC54A04006D1FCA /* TBDryView.xib in Resources */,
 				AE51C1E11DE73660005BAF5F /* TableViewWithEditingCommands.storyboard in Resources */,
 				AE51C1D91DE73633005BAF5F /* SimpleTableViewExample.storyboard in Resources */,
 				AE51C1CB1DE735E3005BAF5F /* Calculator.storyboard in Resources */,
@@ -1570,6 +1575,7 @@
 				C803973A1BD3E17D009D8B26 /* ActivityIndicator.swift in Sources */,
 				C8CDF0C11D688DF700C18F99 /* UITableView+Extensions.swift in Sources */,
 				C849EF821C3193B10048AC4A /* GithubSignupViewModel1.swift in Sources */,
+				1A5EBD4C1FC5509A006D1FCA /* TBNormalCleanView.swift in Sources */,
 				C864BADD1C3332F10083833C /* TableViewWithEditingCommandsViewController.swift in Sources */,
 				1AEEE4951FBEC4FF00D9AA88 /* ToiletBottomView.swift in Sources */,
 				C8477FEF1D29DE8C0074454A /* AnimatableSectionModel.swift in Sources */,
@@ -1581,9 +1587,9 @@
 				C8477FF41D29DE8C0074454A /* Changeset.swift in Sources */,
 				C843A0931C1CE58700CBA4BD /* UINavigationController+Extensions.swift in Sources */,
 				C822B1E71C14E7250088A01A /* SimpleTableViewExampleSectionedViewController.swift in Sources */,
+				1A5EBD391FC50BD6006D1FCA /* TBDryView.swift in Sources */,
 				C83367251AD029AE00C668A7 /* ImageService.swift in Sources */,
 				C819DAE91ED0DDD50043A770 /* Version.swift in Sources */,
-				1A1A0C301FC2BCFA0067BE18 /* ICDryView.m in Sources */,
 				C84780001D29DE8C0074454A /* String+IdentifiableType.swift in Sources */,
 				C817727F1E7DEE5100EA679B /* GitHubSearchRepositories.swift in Sources */,
 				C86E2F471AE5A0CA00C31024 /* WikipediaSearchResult.swift in Sources */,

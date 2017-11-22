@@ -7,7 +7,7 @@
 //
 
 import UIKit
-typealias valueBlock = (_ locklist : Int) -> ()
+typealias valueBlock = (_ value : Int) -> ()
 @IBDesignable
 class ZYSlideView: UIControl {
 
@@ -24,6 +24,8 @@ class ZYSlideView: UIControl {
     @IBInspectable var maxTrackBackgroundColor: UIColor = .blue
     
     @IBInspectable var titleColor: UIColor = .black
+    
+    @IBInspectable var titleHidden: Bool = false
     
     @IBInspectable var count: NSInteger = 2
     
@@ -69,29 +71,28 @@ class ZYSlideView: UIControl {
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
  */
-    override func awakeFromNib() {
-        
-    }
-    
-    override func layoutSubviews() {
-        
-    }
     override func draw(_ rect: CGRect) {
         // Drawing code
+        
+        let image = UIImageView(image: minTrack)
+        image.sizeToFit()
+        let scale = (rect.size.width - 22) / image.frame.width
+        // 图片不存在情况
+        
         thumb = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: 22, height: 22))
         thumb.backgroundColor = thumbBackgroundColor
         thumb.layer.cornerRadius = 11
         thumb.image = thumbOn
         
-        trackBackground = UIImageView(frame: CGRect(x: 11, y: 0.0, width: rect.size.width - 22, height: 7))
+        trackBackground = UIImageView(frame: CGRect(x: 11, y: 0.0, width: rect.size.width - 22, height: 7 * scale))
         trackBackground.backgroundColor = minTrackBackgroundColor
         trackBackground.center.y = thumb.center.y
-        trackBackground.layer.cornerRadius = 3.5
+        trackBackground.layer.cornerRadius = trackBackground.frame.height / 2.0
         trackBackground.image = minTrack
         
         track = UIImageView(frame: trackBackground.frame)
         track.image = maxTrack
-        track.layer.cornerRadius = 3.5
+        track.layer.cornerRadius = trackBackground.frame.height / 2.0
         track.backgroundColor = maxTrackBackgroundColor
         self.addSubview(trackBackground)
         self.addSubview(track)
@@ -101,7 +102,11 @@ class ZYSlideView: UIControl {
         maskLayer.addSublayer(self.progressLayer)
         track.layer.mask = maskLayer
         
-        addSliderTitles()
+        if !titleHidden {
+            addSliderTitles()
+        }else{
+            sectionLength = track.frame.width / CGFloat(count - 1)
+        }
         selectSectionIndex(current, true)
     }
 
@@ -123,8 +128,8 @@ class ZYSlideView: UIControl {
             sumLabel.sizeToFit()
             return sum + sumLabel.frame.width
         }
-        let space = (self.frame.width - titleWidth! - 7) / CGFloat(count - 1)
-        var originX: CGFloat = 3.5
+        let space = (self.frame.width - titleWidth! - trackBackground.frame.height) / CGFloat(count - 1)
+        var originX: CGFloat = trackBackground.frame.height / 2.0
         for index in 0 ..< count  {
             let label = UILabel()
             label.font = .systemFont(ofSize: 11.0)
