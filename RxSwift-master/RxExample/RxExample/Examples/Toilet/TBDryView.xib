@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -96,7 +97,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rV8-0a-zwk">
-                    <rect key="frame" x="171.33333333333334" y="537" width="71.333333333333314" height="70.333333333333371"/>
+                    <rect key="frame" x="176.66666666666666" y="542" width="60.666666666666686" height="60.666666666666629"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="rV8-0a-zwk" secondAttribute="height" multiplier="1:1" id="VXM-6m-UgF"/>
                     </constraints>
@@ -118,7 +119,7 @@
                 <constraint firstItem="gVG-XO-RVj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="H4x-c6-EJp"/>
                 <constraint firstAttribute="trailing" secondItem="gVG-XO-RVj" secondAttribute="trailing" id="ORS-G3-cl3"/>
                 <constraint firstItem="rV8-0a-zwk" firstAttribute="centerY" secondItem="gVG-XO-RVj" secondAttribute="top" id="a9r-3W-5xo"/>
-                <constraint firstItem="rV8-0a-zwk" firstAttribute="height" secondItem="gVG-XO-RVj" secondAttribute="height" multiplier="64:148" id="b79-sl-fLZ"/>
+                <constraint firstItem="rV8-0a-zwk" firstAttribute="width" secondItem="gVG-XO-RVj" secondAttribute="width" multiplier="55:375" id="b79-sl-fLZ"/>
                 <constraint firstItem="gVG-XO-RVj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dHF-RP-HSl"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

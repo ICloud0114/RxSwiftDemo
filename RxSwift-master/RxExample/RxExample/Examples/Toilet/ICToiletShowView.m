@@ -9,7 +9,7 @@
 #import "ICToiletShowView.h"
 //#import "UIColor+Ex.h"
 
-
+static inline float Radians(double degrees) { return degrees * M_PI / 180.f; }
 @interface ICToiletShowView ()
 
 @property (nonatomic, weak) IBOutlet UIImageView *logoImageView;
@@ -79,17 +79,17 @@
         _progressLayer = [CAShapeLayer layer];
         _progressLayer.fillColor = [UIColor clearColor].CGColor;
         _progressLayer.backgroundColor = [UIColor clearColor].CGColor;
-//        _progressLayer.strokeColor = [UIColor colorWithHexString:@"#61c23e"].CGColor;
-//        _progressLayer.strokeEnd = 0.0;
-//        _progressLayer.lineWidth = 3.5;
-//        CGPoint center = CGPointMake(CGRectGetMidX(self.loadingImageView.frame), CGRectGetMidY(self.loadingImageView.frame));
-//        CGFloat radius = CGRectGetWidth(self.loadingImageView.frame) / 2.f ;
-//        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:center
-//                                                                  radius:radius
-//                                                              startAngle:Radians(-90)
-//                                                                endAngle:Radians(270)
-//                                                               clockwise:YES];
-//        _progressLayer.path = bezierPath.CGPath;
+        _progressLayer.strokeColor = [[UIColor redColor] CGColor];//[UIColor colorWithHexString:@"#61c23e"].CGColor;
+        _progressLayer.strokeEnd = 0.0;
+        _progressLayer.lineWidth = 3.5;
+        CGPoint center = CGPointMake(CGRectGetMidX(self.loadingImageView.frame), CGRectGetMidY(self.loadingImageView.frame));
+        CGFloat radius = CGRectGetWidth(self.loadingImageView.frame) / 2.f ;
+        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:center
+                                                                  radius:radius
+                                                              startAngle:Radians(-90)
+                                                                endAngle:Radians(270)
+                                                               clockwise:YES];
+        _progressLayer.path = bezierPath.CGPath;
     }
     return _progressLayer;
 }
@@ -97,19 +97,19 @@
 - (CAShapeLayer *)backgroundLayer
 {
     if (!_backgroundLayer) {
-//        _backgroundLayer = [CAShapeLayer layer];
-//        _backgroundLayer.lineWidth = 1.5;
-//        _backgroundLayer.strokeEnd = 0.0;
-//        _backgroundLayer.strokeColor = [UIColor colorWithWhite:1 alpha:0.2].CGColor;
-//        _backgroundLayer.fillColor = [UIColor clearColor].CGColor;
-//        CGPoint center = CGPointMake(CGRectGetMidX(self.loadingImageView.frame), CGRectGetMidY(self.loadingImageView.frame));
-//        CGFloat radius = CGRectGetWidth(self.loadingImageView.frame) / 2.f;
-//        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:center
-//                                                                  radius:radius
-//                                                              startAngle:Radians(-90)
-//                                                                endAngle:Radians(270)
-//                                                               clockwise:YES];
-//        _backgroundLayer.path = bezierPath.CGPath;
+        _backgroundLayer = [CAShapeLayer layer];
+        _backgroundLayer.lineWidth = 1.5;
+        _backgroundLayer.strokeEnd = 0.0;
+        _backgroundLayer.strokeColor = [UIColor colorWithWhite:1 alpha:0.2].CGColor;
+        _backgroundLayer.fillColor = [UIColor clearColor].CGColor;
+        CGPoint center = CGPointMake(CGRectGetMidX(self.loadingImageView.frame), CGRectGetMidY(self.loadingImageView.frame));
+        CGFloat radius = CGRectGetWidth(self.loadingImageView.frame) / 2.f;
+        UIBezierPath *bezierPath = [UIBezierPath bezierPathWithArcCenter:center
+                                                                  radius:radius
+                                                              startAngle:Radians(-90)
+                                                                endAngle:Radians(270)
+                                                               clockwise:YES];
+        _backgroundLayer.path = bezierPath.CGPath;
     }
     return _backgroundLayer;
 }

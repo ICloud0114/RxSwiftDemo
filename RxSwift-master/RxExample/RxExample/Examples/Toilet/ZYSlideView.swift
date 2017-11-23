@@ -136,7 +136,7 @@ class ZYSlideView: UIControl {
             label.textColor = titleColor
             label.text = titles?[index]
             label.sizeToFit()
-            label.frame = CGRect(x: originX, y: self.bounds.height - label.frame.height - 5, width: label.frame.width, height: label.frame.height)
+            label.frame = CGRect(x: originX, y: self.bounds.height - label.frame.height - 8, width: label.frame.width, height: label.frame.height)
             originX += label.frame.width + space
             self.addSubview(label)
         }

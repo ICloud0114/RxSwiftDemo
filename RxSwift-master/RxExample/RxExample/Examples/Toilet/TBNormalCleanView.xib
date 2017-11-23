@@ -330,7 +330,7 @@
                                     <state key="normal" title=" 冷热SPA" image="operate_spa_normal">
                                         <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="selected" image="operate_spa_select"/>
+                                    <state key="selected" image="operate_spa_open"/>
                                     <connections>
                                         <action selector="spaAction:" destination="xXn-gS-HMa" eventType="touchUpInside" id="jRo-4p-SPF"/>
                                     </connections>
@@ -341,7 +341,7 @@
                                     <state key="normal" title=" 按摩洗净" image="operate_massage_normal">
                                         <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="selected" image="operate_massage_select"/>
+                                    <state key="selected" image="operate_massage_open"/>
                                     <connections>
                                         <action selector="massageAction:" destination="xXn-gS-HMa" eventType="touchUpInside" id="Yd6-yr-lkK"/>
                                     </connections>
@@ -352,7 +352,7 @@
                                     <state key="normal" title=" 移动洗净" image="operate_mobile_normal">
                                         <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="selected" image="operate_mobile_select"/>
+                                    <state key="selected" image="operate_mobile_open"/>
                                     <connections>
                                         <action selector="moveAction:" destination="xXn-gS-HMa" eventType="touchUpInside" id="dSe-xC-eWB"/>
                                     </connections>
@@ -423,7 +423,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG9-W4-znh">
-                    <rect key="frame" x="132.5" y="160" width="55" height="54.5"/>
+                    <rect key="frame" x="136.5" y="164" width="47" height="46.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="FG9-W4-znh" secondAttribute="height" multiplier="1:1" id="jWc-ad-HE3"/>
                     </constraints>
@@ -443,7 +443,7 @@
                 <constraint firstItem="FG9-W4-znh" firstAttribute="centerY" secondItem="OD3-bZ-FdJ" secondAttribute="top" id="C0l-uy-ZGp"/>
                 <constraint firstItem="OD3-bZ-FdJ" firstAttribute="leading" secondItem="xXn-gS-HMa" secondAttribute="leading" id="OvM-hT-624"/>
                 <constraint firstItem="FG9-W4-znh" firstAttribute="centerX" secondItem="OD3-bZ-FdJ" secondAttribute="centerX" id="SEx-RE-bxm"/>
-                <constraint firstItem="FG9-W4-znh" firstAttribute="width" secondItem="OD3-bZ-FdJ" secondAttribute="height" multiplier="64:343" id="ckp-US-n0K"/>
+                <constraint firstItem="FG9-W4-znh" firstAttribute="width" secondItem="OD3-bZ-FdJ" secondAttribute="width" multiplier="55:375" id="ckp-US-n0K"/>
                 <constraint firstAttribute="bottom" secondItem="OD3-bZ-FdJ" secondAttribute="bottom" id="gWw-Pg-xHe"/>
                 <constraint firstAttribute="trailing" secondItem="OD3-bZ-FdJ" secondAttribute="trailing" id="w5k-kj-cWf"/>
             </constraints>
@@ -782,7 +782,7 @@
                                     <state key="normal" title=" 经期特护" image="operate_care_normal">
                                         <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="selected" image="operate_care_select"/>
+                                    <state key="selected" image="operate_care_open"/>
                                     <connections>
                                         <action selector="careAction:" destination="b1a-uW-f4Z" eventType="touchUpInside" id="RaV-vY-q5O"/>
                                     </connections>
@@ -793,7 +793,7 @@
                                     <state key="normal" title=" 按摩洗净" image="operate_massage_normal">
                                         <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="selected" image="operate_massage_select"/>
+                                    <state key="selected" image="operate_massage_open"/>
                                     <connections>
                                         <action selector="massageAction:" destination="b1a-uW-f4Z" eventType="touchUpInside" id="C8S-LI-Tqf"/>
                                     </connections>
@@ -804,7 +804,7 @@
                                     <state key="normal" title=" 移动洗净" image="operate_mobile_normal">
                                         <color key="titleColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
-                                    <state key="selected" image="operate_mobile_select"/>
+                                    <state key="selected" image="operate_mobile_open"/>
                                     <connections>
                                         <action selector="moveAction:" destination="b1a-uW-f4Z" eventType="touchUpInside" id="FUa-x3-E81"/>
                                     </connections>
@@ -875,7 +875,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmY-hQ-yOe">
-                    <rect key="frame" x="132.5" y="160" width="55" height="54.5"/>
+                    <rect key="frame" x="136.5" y="164" width="47" height="46.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="PmY-hQ-yOe" secondAttribute="height" multiplier="1:1" id="dMY-fV-gFM"/>
                     </constraints>
@@ -893,7 +893,7 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ni1-Zm-IKa" secondAttribute="trailing" id="11Z-PW-jkt"/>
-                <constraint firstItem="PmY-hQ-yOe" firstAttribute="width" secondItem="ni1-Zm-IKa" secondAttribute="height" multiplier="64:343" id="CE0-a5-CeP"/>
+                <constraint firstItem="PmY-hQ-yOe" firstAttribute="width" secondItem="ni1-Zm-IKa" secondAttribute="width" multiplier="55:375" id="CE0-a5-CeP"/>
                 <constraint firstItem="PmY-hQ-yOe" firstAttribute="centerY" secondItem="ni1-Zm-IKa" secondAttribute="top" id="OjZ-Ha-COq"/>
                 <constraint firstItem="ni1-Zm-IKa" firstAttribute="leading" secondItem="b1a-uW-f4Z" secondAttribute="leading" id="Xgq-ge-g8M"/>
                 <constraint firstItem="PmY-hQ-yOe" firstAttribute="centerX" secondItem="ni1-Zm-IKa" secondAttribute="centerX" id="sWZ-aU-2ad"/>
@@ -921,17 +921,17 @@
         <image name="line_1" width="1" height="1"/>
         <image name="line_2" width="1" height="1"/>
         <image name="operate_care_normal" width="25" height="25"/>
-        <image name="operate_care_select" width="25" height="25"/>
+        <image name="operate_care_open" width="25" height="25"/>
         <image name="operate_massage_normal" width="25" height="25"/>
-        <image name="operate_massage_select" width="25" height="25"/>
+        <image name="operate_massage_open" width="25" height="25"/>
         <image name="operate_mobile_normal" width="25" height="25"/>
-        <image name="operate_mobile_select" width="25" height="25"/>
+        <image name="operate_mobile_open" width="25" height="25"/>
         <image name="operate_position" width="24" height="24"/>
         <image name="operate_pressure" width="24" height="24"/>
         <image name="operate_pressure_line" width="247" height="7"/>
         <image name="operate_pressure_line_bg" width="247" height="7"/>
         <image name="operate_spa_normal" width="25" height="25"/>
-        <image name="operate_spa_select" width="25" height="25"/>
+        <image name="operate_spa_open" width="25" height="25"/>
         <image name="operate_temperature" width="24" height="24"/>
         <image name="operate_temperature_bar" width="22" height="22"/>
         <image name="operate_temperature_line" width="247" height="7"/>

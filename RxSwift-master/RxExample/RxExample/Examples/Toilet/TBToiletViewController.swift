@@ -7,10 +7,10 @@
 //
 
 import UIKit
+
 class TBToiletViewController: UIViewController {
     
-    
-    @IBOutlet weak var sliderView: ZYSlideView!
+    @IBOutlet weak var displayView: ToiletDisplayView!
     override func viewDidLoad() {
         super.viewDidLoad()
 //        sliderView.titles = ["1min","2min","3min","4min"]
@@ -19,6 +19,8 @@ class TBToiletViewController: UIViewController {
 //            print("select \(value)")
 //        }
         // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +28,19 @@ class TBToiletViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func normalCleanAction(_ sender: UIButton){
+        
+        let normalClean = TBNormalCleanView.shareNormalCleanView()
+        normalClean.showIn(view: self.view, data: (2, 1, 1, 2))
+        displayView.showProgressView(progress: 0.3, type: .normalClean)
+    }
+    
+    @IBAction func femaleCleanAction(_ sender: UIButton){
+        let normalClean = TBNormalCleanView.shareFemaleCleanView()
+        normalClean.showIn(view: self.view, data: (1, 3, 2, 1))
+        displayView.showProgressView(progress: 0.3, type: .femaleClean)
+    }
+    
     @IBAction func dryAction(_ sender: Any) {
         
         let dryView = TBDryView.shareDryView()
@@ -38,26 +52,29 @@ class TBToiletViewController: UIViewController {
         dryView.complete = {
             print("dry view dismiss")
         }
+        displayView.showProgressView(progress: 0.3, type: .dry)
+    }
+
+    @IBAction func flushAction(_ sender: UIButton) {
+
+       _ = sender.startRepeatRotate(timeInterval: 3.0)
     }
     
-    @IBAction func normalCleanAction(_ sender: UIButton){
+    @IBAction func childCleanAction(_ sender: UIButton) {
+        displayView.showProgressView(progress: 0.5, type: .childClean)
+    }
+    
+    @IBAction func maleAutoCleanAction(_ sender: UIButton) {
+        displayView.showProgressView(progress: 0.6, type: .maleAuto)
+    }
+    
+    @IBAction func femaleAutoCleanAction(_ sender: UIButton) {
+        displayView.showProgressView(progress: 0.7, type: .femaleAuto)
+    }
+    
+    @IBAction func stopAction(_ sender: UIButton) {
         
-        let normalClean = TBNormalCleanView.shareNormalCleanView()
-        normalClean.showIn(view: self.view, data: (2, 1, 1, 2))
+        displayView.showProgressView(progress: 0.4, type: .stop)
     }
     
-    @IBAction func femaleCleanAction(_ sender: UIButton){
-        let normalClean = TBNormalCleanView.shareFemaleCleanView()
-        normalClean.showIn(view: self.view, data: (1, 3, 2, 1))
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
