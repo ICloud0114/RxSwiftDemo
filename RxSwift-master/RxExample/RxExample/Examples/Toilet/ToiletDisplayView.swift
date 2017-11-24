@@ -65,17 +65,6 @@ class ToiletDisplayView: UIView {
     }()
 }
 
-enum OperationType {
-    case stop
-    case normalClean
-    case femaleClean
-    case dry
-    case childClean
-    case femaleAuto
-    case maleAuto
-    case flush
-}
-
 extension ToiletDisplayView{
     
     func showProgressView(progress: CGFloat ,type: OperationType) {
@@ -99,8 +88,6 @@ extension ToiletDisplayView{
                 self.showFemaleAutoClean()
             case .maleAuto:
                 self.showMaleAutoClean()
-            case .flush:
-                break
         }
     }
 }

@@ -19,6 +19,8 @@
 		1A1A0C2F1FC2BCFA0067BE18 /* ICNormalCleanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */; };
 		1A1A0C321FC2DBBF0067BE18 /* ZYSlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */; };
 		1A1AC2121FC6C036007B608B /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2111FC6C036007B608B /* loadingView.swift */; };
+		1A1AC2181FC7F757007B608B /* ToiletLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2171FC7F757007B608B /* ToiletLevel.swift */; };
+		1A1AC21A1FC809A5007B608B /* TimeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2191FC809A5007B608B /* TimeTransform.swift */; };
 		1A4428591FBE8CE000CD0600 /* Toilet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4428581FBE8CE000CD0600 /* Toilet.storyboard */; };
 		1A5EBD391FC50BD6006D1FCA /* TBDryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */; };
 		1A5EBD491FC54A04006D1FCA /* TBDryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */; };
@@ -459,6 +461,8 @@
 		1A1A0C2A1FC2BCF90067BE18 /* ICToiletBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ICToiletBottomView.h; sourceTree = "<group>"; };
 		1A1A0C311FC2DBBF0067BE18 /* ZYSlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYSlideView.swift; sourceTree = "<group>"; };
 		1A1AC2111FC6C036007B608B /* loadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
+		1A1AC2171FC7F757007B608B /* ToiletLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletLevel.swift; sourceTree = "<group>"; };
+		1A1AC2191FC809A5007B608B /* TimeTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTransform.swift; sourceTree = "<group>"; };
 		1A4428581FBE8CE000CD0600 /* Toilet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Toilet.storyboard; sourceTree = "<group>"; };
 		1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDryView.swift; sourceTree = "<group>"; };
 		1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBNormalCleanView.swift; sourceTree = "<group>"; };
@@ -690,6 +694,8 @@
 				1A1AC2111FC6C036007B608B /* loadingView.swift */,
 				1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */,
 				1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */,
+				1A1AC2171FC7F757007B608B /* ToiletLevel.swift */,
+				1A1AC2191FC809A5007B608B /* TimeTransform.swift */,
 				1A1A0C271FC2BCF90067BE18 /* ICNormalCleanView.h */,
 				1A1A0C261FC2BCF90067BE18 /* ICNormalCleanView.m */,
 				1A1A0C1F1FC2BCF80067BE18 /* TBNormalCleanView.xib */,
@@ -1582,6 +1588,7 @@
 				1AEEE4951FBEC4FF00D9AA88 /* ToiletBottomView.swift in Sources */,
 				C8477FEF1D29DE8C0074454A /* AnimatableSectionModel.swift in Sources */,
 				1A1A0C2E1FC2BCFA0067BE18 /* ICToiletBottomView.m in Sources */,
+				1A1AC2181FC7F757007B608B /* ToiletLevel.swift in Sources */,
 				C822B1D91C14CBEA0088A01A /* Protocols.swift in Sources */,
 				C8BCD3E61C14A95E005F1280 /* NumbersViewController.swift in Sources */,
 				C849EF881C3195180048AC4A /* GithubSignupViewModel2.swift in Sources */,
@@ -1595,6 +1602,7 @@
 				C84780001D29DE8C0074454A /* String+IdentifiableType.swift in Sources */,
 				C817727F1E7DEE5100EA679B /* GitHubSearchRepositories.swift in Sources */,
 				C86E2F471AE5A0CA00C31024 /* WikipediaSearchResult.swift in Sources */,
+				1A1AC21A1FC809A5007B608B /* TimeTransform.swift in Sources */,
 				C8984CD11C36BC3E001E4272 /* NumberCell.swift in Sources */,
 				C8A2A2C81B4049E300F11F09 /* PseudoRandomGenerator.swift in Sources */,
 				1A1A0C2F1FC2BCFA0067BE18 /* ICNormalCleanView.m in Sources */,

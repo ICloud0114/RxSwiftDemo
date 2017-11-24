@@ -29,9 +29,10 @@ enum CalculatorState {
     case twoOperandsAndOperator(operand: Double, operator: Operator, screen: String)
 }
 
+
 extension CalculatorState {
     static let initial = CalculatorState.oneOperand(screen: "0")
-
+    
     func mapScreen(transform: (String) -> String) -> CalculatorState {
         switch self {
         case let .oneOperand(screen):

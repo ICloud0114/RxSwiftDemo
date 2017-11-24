@@ -61,6 +61,7 @@ class TBToiletViewController: UIViewController {
     }
     
     @IBAction func childCleanAction(_ sender: UIButton) {
+        
         displayView.showProgressView(progress: 0.5, type: .childClean)
     }
     

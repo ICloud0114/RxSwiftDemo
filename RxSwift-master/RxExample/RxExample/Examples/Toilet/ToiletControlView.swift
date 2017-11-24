@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
+
 class ToiletControlView: UIView {
 
     @IBOutlet weak var buttocksBtn: UIButton!
@@ -19,7 +18,7 @@ class ToiletControlView: UIView {
     @IBOutlet weak var maleAutoBtn: UIButton!
     @IBOutlet weak var femaleAutoBtn: UIButton!
     @IBOutlet weak var stopBtn: UIButton!
-    var disposeBag = DisposeBag()
+
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -29,18 +28,6 @@ class ToiletControlView: UIView {
     */
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
-        let buttocksStatus = buttocksBtn.rx.isSelected
-        let femaleCleanStatus = femaleCleanBtn.rx.isSelected
-        
-//        let stopBtnValid = Observable.combineLatest(buttocksStatus, femaleCleanStatus) { $0 && $1 }
-//            .shareReplay(1)
-
-        buttocksBtn.rx.tap
-            .subscribe(onNext:{[weak self] in
-                
-            }).disposed(by: disposeBag)
     }
 
 }
