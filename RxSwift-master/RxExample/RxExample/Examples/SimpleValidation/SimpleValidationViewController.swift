@@ -35,7 +35,6 @@ class SimpleValidationViewController : ViewController {
             .map { $0.characters.count >= minimalUsernameLength }
             .shareReplay(1) // without this map would be executed once for each binding, rx is stateless by default
         
-        
         let passwordValid = passwordOutlet.rx.text.orEmpty
             .map { $0.characters.count >= minimalPasswordLength }
             .shareReplay(1)
@@ -63,7 +62,6 @@ class SimpleValidationViewController : ViewController {
         doSomethingOutlet.rx.tap
             .subscribe(onNext: { [weak self] in self?.showAlert() })
             .disposed(by: disposeBag)
-        
     }
 
     func showAlert() {

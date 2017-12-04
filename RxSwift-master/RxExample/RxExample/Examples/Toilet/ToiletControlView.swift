@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import RxSwift
+import RxCocoa
 class ToiletControlView: UIView {
 
     @IBOutlet weak var buttocksBtn: UIButton!
@@ -26,8 +27,16 @@ class ToiletControlView: UIView {
         // Drawing code
     }
     */
+
     override func awakeFromNib() {
         super.awakeFromNib()
+//        let username: Observable<Bool>
+//        username.flatMapLatest { result in
+//            return true
+//        }.shareReplay(1)
+//      let _ =  username.bind(to: buttocksBtn.rx.isSelected).addDisposableTo(DisposeBag())
+        
+        
     }
-
+   
 }
