@@ -30,18 +30,17 @@ class SimpleValidationViewController : ViewController {
 
         usernameValidOutlet.text = "Username has to be at least \(minimalUsernameLength) characters"
         passwordValidOutlet.text = "Password has to be at least \(minimalPasswordLength) characters"
-
+        
         let usernameValid = usernameOutlet.rx.text.orEmpty
             .map { $0.characters.count >= minimalUsernameLength }
             .shareReplay(1) // without this map would be executed once for each binding, rx is stateless by default
-        
         let passwordValid = passwordOutlet.rx.text.orEmpty
             .map { $0.characters.count >= minimalPasswordLength }
             .shareReplay(1)
 
         let everythingValid = Observable.combineLatest(usernameValid, passwordValid) { $0 && $1 }
             .shareReplay(1)
-    
+        
         usernameValid.bind(to: passwordOutlet.rx.isEnabled).disposed(by: disposeBag)
         usernameValid
             .bind(to: passwordOutlet.rx.isEnabled)
@@ -62,6 +61,7 @@ class SimpleValidationViewController : ViewController {
         doSomethingOutlet.rx.tap
             .subscribe(onNext: { [weak self] in self?.showAlert() })
             .disposed(by: disposeBag)
+        
     }
 
     func showAlert() {
