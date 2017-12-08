@@ -90,6 +90,9 @@ class APIWrappersViewController: ViewController {
         switchValue.asObservable()
             .subscribe(onNext: { [weak self] x in
                 self?.debug("UISwitch value \(x)")
+                if x {
+                  _ = (self?.segmentedControl.rx.value)! <-> Variable(1)
+                }
             })
             .disposed(by: disposeBag)
 

@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         #if DEBUG
         _ = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
             .subscribe(onNext: { _ in
-                print("Resource count \(RxSwift.Resources.total)")
+//                print("Resource count \(RxSwift.Resources.total)")
             })
         #endif
 
