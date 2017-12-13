@@ -26,6 +26,13 @@
 		1A5EBD491FC54A04006D1FCA /* TBDryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */; };
 		1A5EBD4A1FC54A1E006D1FCA /* TBNormalCleanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A0C1F1FC2BCF80067BE18 /* TBNormalCleanView.xib */; };
 		1A5EBD4C1FC5509A006D1FCA /* TBNormalCleanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */; };
+		1A920A4F1FE0D24D00EAA0D0 /* FlyBird.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A920A4E1FE0D24D00EAA0D0 /* FlyBird.storyboard */; };
+		1A920A511FE1065200EAA0D0 /* FlyBirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A501FE1065200EAA0D0 /* FlyBirdViewController.swift */; };
+		1A920A531FE1097900EAA0D0 /* SingleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A521FE1097900EAA0D0 /* SingleViewController.swift */; };
+		1A920A551FE1099100EAA0D0 /* LimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A541FE1099100EAA0D0 /* LimitViewController.swift */; };
+		1A920A571FE109A200EAA0D0 /* LongTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */; };
+		1A920A591FE10B4600EAA0D0 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */; };
+		1A920A5C1FE1306400EAA0D0 /* DateTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */; };
 		1AEEE4801FBEC45700D9AA88 /* TBToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */; };
 		1AEEE4911FBEC4D300D9AA88 /* ToiletControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */; };
 		1AEEE4931FBEC4EA00D9AA88 /* ToiletDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */; };
@@ -466,6 +473,13 @@
 		1A4428581FBE8CE000CD0600 /* Toilet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Toilet.storyboard; sourceTree = "<group>"; };
 		1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDryView.swift; sourceTree = "<group>"; };
 		1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBNormalCleanView.swift; sourceTree = "<group>"; };
+		1A920A4E1FE0D24D00EAA0D0 /* FlyBird.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlyBird.storyboard; sourceTree = "<group>"; };
+		1A920A501FE1065200EAA0D0 /* FlyBirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyBirdViewController.swift; sourceTree = "<group>"; };
+		1A920A521FE1097900EAA0D0 /* SingleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleViewController.swift; sourceTree = "<group>"; };
+		1A920A541FE1099100EAA0D0 /* LimitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitViewController.swift; sourceTree = "<group>"; };
+		1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTimeViewController.swift; sourceTree = "<group>"; };
+		1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
+		1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePickerView.swift; sourceTree = "<group>"; };
 		1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBToiletViewController.swift; sourceTree = "<group>"; };
 		1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletControlView.swift; sourceTree = "<group>"; };
 		1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDisplayView.swift; sourceTree = "<group>"; };
@@ -711,6 +725,20 @@
 				1A1A0C1E1FC2BCF80067BE18 /* ICToiletShowView.m */,
 			);
 			path = Toilet;
+			sourceTree = "<group>";
+		};
+		1A920A3E1FE0CEED00EAA0D0 /* FlyBird */ = {
+			isa = PBXGroup;
+			children = (
+				1A920A4E1FE0D24D00EAA0D0 /* FlyBird.storyboard */,
+				1A920A501FE1065200EAA0D0 /* FlyBirdViewController.swift */,
+				1A920A521FE1097900EAA0D0 /* SingleViewController.swift */,
+				1A920A541FE1099100EAA0D0 /* LimitViewController.swift */,
+				1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */,
+				1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */,
+				1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */,
+			);
+			path = FlyBird;
 			sourceTree = "<group>";
 		};
 		252C9F671F1410D600F5F951 /* UIPickerViewExample */ = {
@@ -1001,6 +1029,7 @@
 				07A5C3D91B70B6B8001EFE5C /* Calculator */,
 				C843A08B1C1CE39900CBA4BD /* GitHubSearchRepositories */,
 				1A4428481FBE8CB900CD0600 /* Toilet */,
+				1A920A3E1FE0CEED00EAA0D0 /* FlyBird */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -1476,6 +1505,7 @@
 				1A5EBD4A1FC54A1E006D1FCA /* TBNormalCleanView.xib in Resources */,
 				AE51C1E31DE73667005BAF5F /* WikipediaSearch.storyboard in Resources */,
 				AE51C1D71DE73623005BAF5F /* Numbers.storyboard in Resources */,
+				1A920A4F1FE0D24D00EAA0D0 /* FlyBird.storyboard in Resources */,
 				AE51C1CF1DE735FD005BAF5F /* GitHubSearchRepositories.storyboard in Resources */,
 				AE51C1DB1DE7363C005BAF5F /* SimpleTableViewExampleSectioned.storyboard in Resources */,
 				AE51C1D51DE73613005BAF5F /* ImagePicker.storyboard in Resources */,
@@ -1539,6 +1569,7 @@
 				C84780021D29DE8C0074454A /* UI+SectionedViewType.swift in Sources */,
 				B1604CC91BE5BBFA002E1279 /* UIImageView+DownloadableImage.swift in Sources */,
 				C886A68F1D85AD2000653EE4 /* RxCLLocationManagerDelegateProxy.swift in Sources */,
+				1A920A511FE1065200EAA0D0 /* FlyBirdViewController.swift in Sources */,
 				C84780041D29DE8C0074454A /* RxCollectionViewSectionedReloadDataSource.swift in Sources */,
 				1A1AC2121FC6C036007B608B /* loadingView.swift in Sources */,
 				C8477FF91D29DE8C0074454A /* IdentifiableType.swift in Sources */,
@@ -1610,6 +1641,7 @@
 				252C9F781F14111800F5F951 /* SimplePickerViewExampleViewController.swift in Sources */,
 				C8477FF71D29DE8C0074454A /* Differentiator.swift in Sources */,
 				C8984CD51C36BC3E001E4272 /* PartialUpdatesViewController.swift in Sources */,
+				1A920A551FE1099100EAA0D0 /* LimitViewController.swift in Sources */,
 				C88CB7261D8F253D0021D83F /* RxImagePickerDelegateProxy.swift in Sources */,
 				8479BC721C3BDAD400FB8B54 /* ImagePickerController.swift in Sources */,
 				C8477FFF1D29DE8C0074454A /* SectionModelType.swift in Sources */,
@@ -1622,6 +1654,7 @@
 				C8C46DAA1B47F7110020D71E /* WikipediaSearchCell.swift in Sources */,
 				B1604CB51BE49F8D002E1279 /* DownloadableImage.swift in Sources */,
 				C8477FF51D29DE8C0074454A /* CollectionViewSectionedDataSource.swift in Sources */,
+				1A920A5C1FE1306400EAA0D0 /* DateTimePickerView.swift in Sources */,
 				1AEEE4931FBEC4EA00D9AA88 /* ToiletDisplayView.swift in Sources */,
 				075F13101B4E9D5A000D7861 /* APIWrappersViewController.swift in Sources */,
 				C84780051D29DE8C0074454A /* RxTableViewSectionedAnimatedDataSource.swift in Sources */,
@@ -1630,12 +1663,15 @@
 				B18F3BBC1BD92EC8000AAC79 /* Reachability.swift in Sources */,
 				07E3C2331B03605B0010338D /* Dependencies.swift in Sources */,
 				C8477FFA1D29DE8C0074454A /* IdentifiableValue.swift in Sources */,
+				1A920A571FE109A200EAA0D0 /* LongTimeViewController.swift in Sources */,
 				1A1A0C2C1FC2BCFA0067BE18 /* ICToiletShowView.m in Sources */,
+				1A920A591FE10B4600EAA0D0 /* Date+Ex.swift in Sources */,
 				C849EF9C1C31A8750048AC4A /* String+URL.swift in Sources */,
 				C86E2F451AE5A0CA00C31024 /* WikipediaAPI.swift in Sources */,
 				C8DF92CD1B0B2F84009BCF9A /* AppDelegate.swift in Sources */,
 				C8477FF21D29DE8C0074454A /* AnimationConfiguration.swift in Sources */,
 				1AEEE4911FBEC4D300D9AA88 /* ToiletControlView.swift in Sources */,
+				1A920A531FE1097900EAA0D0 /* SingleViewController.swift in Sources */,
 				C86E2F461AE5A0CA00C31024 /* WikipediaPage.swift in Sources */,
 				1A1A0C2D1FC2BCFA0067BE18 /* ICSlideView.m in Sources */,
 				C809E97D1BE697100058D948 /* UIImage+Extensions.swift in Sources */,

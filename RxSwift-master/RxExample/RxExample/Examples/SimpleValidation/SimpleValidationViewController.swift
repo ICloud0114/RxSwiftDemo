@@ -17,6 +17,7 @@ let minimalPasswordLength = 5
 
 class SimpleValidationViewController : ViewController {
 
+    @IBOutlet weak var flyButton: UIButton!
     @IBOutlet weak var usernameOutlet: UITextField!
     @IBOutlet weak var usernameValidOutlet: UILabel!
 
@@ -61,7 +62,10 @@ class SimpleValidationViewController : ViewController {
         doSomethingOutlet.rx.tap
             .subscribe(onNext: { [weak self] in self?.showAlert() })
             .disposed(by: disposeBag)
-        
+        flyButton.rx.tap
+            .subscribe(onNext:{
+                print("flying...")
+            }).disposed(by: disposeBag)
     }
     
     func showAlert() {

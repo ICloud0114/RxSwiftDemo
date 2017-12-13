@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="bgd-ny-eho"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wXQ-4H-OJk">
-                        <rect key="frame" x="0.0" y="0.0" width="200" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rXf-aV-ofg">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwL-m1-d82">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1051.5"/>
@@ -46,7 +46,7 @@
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
-                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="JEV-nj-tQA">
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEV-nj-tQA">
                                                 <rect key="frame" x="12" y="137" width="296" height="216"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="216" id="u1r-nn-deL"/>
@@ -54,6 +54,7 @@
                                                 <date key="date" timeIntervalSinceReferenceDate="458137679.98291397">
                                                     <!--2015-07-09 12:27:59 +0000-->
                                                 </date>
+                                                <locale key="locale" localeIdentifier="zh-Hans"/>
                                             </datePicker>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eas-vY-Wds">
                                                 <rect key="frame" x="252" y="47" width="56" height="44"/>
@@ -180,7 +181,7 @@
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="200" height="568"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="activityIndicator" destination="dBZ-FL-vel" id="ka4-oB-47r"/>
                         <outlet property="bbitem" destination="PtG-IX-ax4" id="Sl6-M4-8r0"/>
