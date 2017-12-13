@@ -67,17 +67,22 @@ class LimitViewController: UIViewController, DateTimePickerViewDelegate {
     
     @IBAction func selectDateTimeLimitAction(_ sender: UIButton){
         
-        dateTimePicker = DateTimePickerView(frame: self.view.frame)
+        dateTimePicker = DateTimePickerView(frame: (self.view.window?.frame)!)
         dateTimePicker?.delegate = self
-        self.view.addSubview(dateTimePicker!)
+        self.view.window?.addSubview(dateTimePicker!)
         dateTimePicker?.showDateTimePickerView()
     }
     
     func didFinishSelectDateTime(dateTime: String){
         print("------->" + dateTime)
+        dateTimePicker?.removeFromSuperview()
+        dateTimePicker?.delegate = nil
+        dateTimePicker = nil
     }
     
     func didCancelSelectDateTime(){
-        
+        dateTimePicker?.removeFromSuperview()
+        dateTimePicker?.delegate = nil
+        dateTimePicker = nil
     }
 }

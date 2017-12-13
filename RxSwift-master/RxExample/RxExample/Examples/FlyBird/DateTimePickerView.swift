@@ -83,6 +83,8 @@ class DateTimePickerView: UIView {
         let splitLine = UIView(frame: CGRect(x: 0, y: 40, width: self.frame.width, height: 0.5))
         splitLine.backgroundColor = UIColor.lightGray
         
+        displayCurrentDateTime(Date())
+        
     }
     
     func displayCurrentDateTime(_ date: Date) {
@@ -92,7 +94,7 @@ class DateTimePickerView: UIView {
         self.pickerView.selectRow(0, inComponent: 0, animated: false)
         self.pickerView.selectRow(date.month - 1, inComponent: 1, animated: false)
         self.pickerView.selectRow(date.day - 1, inComponent: 2, animated: false)
-        self.pickerView.selectRow(date.hour - 1, inComponent: 3, animated: false)
+        self.pickerView.selectRow(date.hour , inComponent: 3, animated: false)
     }
     
     func calculateAllDays(year: Int, month: Int) -> Int {
@@ -202,6 +204,7 @@ extension DateTimePickerView:UIPickerViewDataSource,UIPickerViewDelegate{
 extension DateTimePickerView{
     
     func showDateTimePickerView() {
+        
         displayCurrentDateTime(Date())
         self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         UIView.animate(withDuration: 0.25) {
