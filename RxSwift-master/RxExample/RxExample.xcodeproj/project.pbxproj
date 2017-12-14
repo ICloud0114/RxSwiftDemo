@@ -33,10 +33,14 @@
 		1A920A571FE109A200EAA0D0 /* LongTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */; };
 		1A920A591FE10B4600EAA0D0 /* Date+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */; };
 		1A920A5C1FE1306400EAA0D0 /* DateTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */; };
+		1A920A801FE21F0000EAA0D0 /* outOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A6D1FE21EFE00EAA0D0 /* outOrder.cpp */; };
+		1A920A811FE21F0000EAA0D0 /* lockEncrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A7D1FE21EFF00EAA0D0 /* lockEncrypt.cpp */; };
+		1A920A821FE21F0000EAA0D0 /* encryption.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A920A7E1FE21EFF00EAA0D0 /* encryption.cpp */; };
 		1AEEE4801FBEC45700D9AA88 /* TBToiletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */; };
 		1AEEE4911FBEC4D300D9AA88 /* ToiletControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */; };
 		1AEEE4931FBEC4EA00D9AA88 /* ToiletDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */; };
 		1AEEE4951FBEC4FF00D9AA88 /* ToiletBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEE4941FBEC4FF00D9AA88 /* ToiletBottomView.swift */; };
+		1AFC6F321FE24B3C00CD8392 /* EncryptionTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AFC6F311FE24B3C00CD8392 /* EncryptionTest.mm */; };
 		252C9F781F14111800F5F951 /* SimplePickerViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252C9F771F14111800F5F951 /* SimplePickerViewExampleViewController.swift */; };
 		252C9F7A1F14115B00F5F951 /* SimpleUIPickerViewExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252C9F791F14115B00F5F951 /* SimpleUIPickerViewExample.storyboard */; };
 		2864D5F21D995FCD004F8484 /* Application+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864D5F11D995FCD004F8484 /* Application+Extensions.swift */; };
@@ -480,10 +484,17 @@
 		1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongTimeViewController.swift; sourceTree = "<group>"; };
 		1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ex.swift"; sourceTree = "<group>"; };
 		1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePickerView.swift; sourceTree = "<group>"; };
+		1A920A6D1FE21EFE00EAA0D0 /* outOrder.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = outOrder.cpp; sourceTree = "<group>"; };
+		1A920A7D1FE21EFF00EAA0D0 /* lockEncrypt.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = lockEncrypt.cpp; sourceTree = "<group>"; };
+		1A920A7E1FE21EFF00EAA0D0 /* encryption.cpp */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; path = encryption.cpp; sourceTree = "<group>"; };
+		1A920A7F1FE21EFF00EAA0D0 /* encryption.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; path = encryption.h; sourceTree = "<group>"; };
 		1AEEE47F1FBEC45700D9AA88 /* TBToiletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBToiletViewController.swift; sourceTree = "<group>"; };
 		1AEEE4901FBEC4D300D9AA88 /* ToiletControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletControlView.swift; sourceTree = "<group>"; };
 		1AEEE4921FBEC4EA00D9AA88 /* ToiletDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletDisplayView.swift; sourceTree = "<group>"; };
 		1AEEE4941FBEC4FF00D9AA88 /* ToiletBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletBottomView.swift; sourceTree = "<group>"; };
+		1AFC6F2F1FE22AE700CD8392 /* RxExample-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RxExample-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AFC6F301FE24B3C00CD8392 /* EncryptionTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptionTest.h; sourceTree = "<group>"; };
+		1AFC6F311FE24B3C00CD8392 /* EncryptionTest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = EncryptionTest.mm; sourceTree = "<group>"; };
 		252C9F771F14111800F5F951 /* SimplePickerViewExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePickerViewExampleViewController.swift; sourceTree = "<group>"; };
 		252C9F791F14115B00F5F951 /* SimpleUIPickerViewExample.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleUIPickerViewExample.storyboard; sourceTree = "<group>"; };
 		2864D5F11D995FCD004F8484 /* Application+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+Extensions.swift"; sourceTree = "<group>"; };
@@ -737,6 +748,13 @@
 				1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */,
 				1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */,
 				1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */,
+				1AFC6F301FE24B3C00CD8392 /* EncryptionTest.h */,
+				1AFC6F311FE24B3C00CD8392 /* EncryptionTest.mm */,
+				1AFC6F2F1FE22AE700CD8392 /* RxExample-iOS-Bridging-Header.h */,
+				1A920A7E1FE21EFF00EAA0D0 /* encryption.cpp */,
+				1A920A7F1FE21EFF00EAA0D0 /* encryption.h */,
+				1A920A7D1FE21EFF00EAA0D0 /* lockEncrypt.cpp */,
+				1A920A6D1FE21EFE00EAA0D0 /* outOrder.cpp */,
 			);
 			path = FlyBird;
 			sourceTree = "<group>";
@@ -1601,6 +1619,7 @@
 				C8477FF11D29DE8C0074454A /* AnimatableSectionModelType.swift in Sources */,
 				C864BAD71C3332F10083833C /* DetailViewController.swift in Sources */,
 				1AEEE4801FBEC45700D9AA88 /* TBToiletViewController.swift in Sources */,
+				1A920A801FE21F0000EAA0D0 /* outOrder.cpp in Sources */,
 				C822B1DF1C14CEAA0088A01A /* BindingExtensions.swift in Sources */,
 				C864BAD91C3332F10083833C /* RandomUserAPI.swift in Sources */,
 				A5CD038F1F1670E50005A376 /* CustomPickerViewAdapterExampleViewController.swift in Sources */,
@@ -1614,6 +1633,7 @@
 				C803973A1BD3E17D009D8B26 /* ActivityIndicator.swift in Sources */,
 				C8CDF0C11D688DF700C18F99 /* UITableView+Extensions.swift in Sources */,
 				C849EF821C3193B10048AC4A /* GithubSignupViewModel1.swift in Sources */,
+				1A920A821FE21F0000EAA0D0 /* encryption.cpp in Sources */,
 				1A5EBD4C1FC5509A006D1FCA /* TBNormalCleanView.swift in Sources */,
 				C864BADD1C3332F10083833C /* TableViewWithEditingCommandsViewController.swift in Sources */,
 				1AEEE4951FBEC4FF00D9AA88 /* ToiletBottomView.swift in Sources */,
@@ -1633,6 +1653,7 @@
 				C84780001D29DE8C0074454A /* String+IdentifiableType.swift in Sources */,
 				C817727F1E7DEE5100EA679B /* GitHubSearchRepositories.swift in Sources */,
 				C86E2F471AE5A0CA00C31024 /* WikipediaSearchResult.swift in Sources */,
+				1AFC6F321FE24B3C00CD8392 /* EncryptionTest.mm in Sources */,
 				1A1AC21A1FC809A5007B608B /* TimeTransform.swift in Sources */,
 				C8984CD11C36BC3E001E4272 /* NumberCell.swift in Sources */,
 				C8A2A2C81B4049E300F11F09 /* PseudoRandomGenerator.swift in Sources */,
@@ -1642,6 +1663,7 @@
 				C8477FF71D29DE8C0074454A /* Differentiator.swift in Sources */,
 				C8984CD51C36BC3E001E4272 /* PartialUpdatesViewController.swift in Sources */,
 				1A920A551FE1099100EAA0D0 /* LimitViewController.swift in Sources */,
+				1A920A811FE21F0000EAA0D0 /* lockEncrypt.cpp in Sources */,
 				C88CB7261D8F253D0021D83F /* RxImagePickerDelegateProxy.swift in Sources */,
 				8479BC721C3BDAD400FB8B54 /* ImagePickerController.swift in Sources */,
 				C8477FFF1D29DE8C0074454A /* SectionModelType.swift in Sources */,
@@ -1981,7 +2003,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/FlyBird/RxExample-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2000,7 +2022,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/FlyBird/RxExample-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
@@ -2207,7 +2229,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/FlyBird/RxExample-iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};

@@ -51,13 +51,21 @@ class LongTimeViewController: UIViewController {
     */
 
     @IBAction func createPasswordAction(_ sender: Any) {
-        let alertView = UIAlertView(
-            title: "success",
-            message: "password is ------",
-            delegate: nil,
-            cancelButtonTitle: "OK"
-        )
+        let format = DateFormatter()
+        format.dateFormat = "yyyyMMddHH"
         
-        alertView.show()
+        let result = EncryptionTest().createPassword(format.string(from: Date()), hours: 8760)
+        
+        if result != nil {
+            let pwd:[Int] = result as! [Int]
+            
+            let passwordString  = pwd.reduce("", { (password, p) -> String in
+                return password + "\(p)"
+            })
+            
+            self.passwordLabel.text = "密码： " + passwordString
+        }else{
+            self.passwordLabel.text = "ERROR"
+        }
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DateTimePickerViewDelegate {
-    func didFinishSelectDateTime(dateTime: String)
+    func didFinishSelectDateTime(dateTime: String, pickerView: DateTimePickerView)
     func didCancelSelectDateTime()
 }
 class DateTimePickerView: UIView {
@@ -82,6 +82,7 @@ class DateTimePickerView: UIView {
 
         let splitLine = UIView(frame: CGRect(x: 0, y: 40, width: self.frame.width, height: 0.5))
         splitLine.backgroundColor = UIColor.lightGray
+        upView.addSubview(splitLine)
         
         displayCurrentDateTime(Date())
         
@@ -91,7 +92,12 @@ class DateTimePickerView: UIView {
         
         dayRange = calculateAllDays(year: date.year, month: date.month)
         
-        self.pickerView.selectRow(0, inComponent: 0, animated: false)
+        year = date.year
+        month = date.month
+        day = date.day
+        hour = date.hour
+        
+        self.pickerView.selectRow(year - startYear, inComponent: 0, animated: false)
         self.pickerView.selectRow(date.month - 1, inComponent: 1, animated: false)
         self.pickerView.selectRow(date.day - 1, inComponent: 2, animated: false)
         self.pickerView.selectRow(date.hour , inComponent: 3, animated: false)
@@ -121,11 +127,12 @@ class DateTimePickerView: UIView {
     }
     
     @objc func cancelButtonClick() {
-        self.delegate?.didCancelSelectDateTime()
+//        self.delegate?.didCancelSelectDateTime()
+        hideDateTimePickerView()
     }
     
     @objc func configButtonClick(){
-        self.delegate?.didFinishSelectDateTime(dateTime: "\(year)/\(month)/\(day) \(hour):00")
+        self.delegate?.didFinishSelectDateTime(dateTime: "\(year)/\(month)/\(day) \(hour):00",pickerView: self)
     }
     
 }
@@ -203,9 +210,9 @@ extension DateTimePickerView:UIPickerViewDataSource,UIPickerViewDelegate{
 
 extension DateTimePickerView{
     
-    func showDateTimePickerView() {
+    func showDateTimePickerView(currentDate: Date) {
         
-        displayCurrentDateTime(Date())
+        displayCurrentDateTime(currentDate)
         self.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         UIView.animate(withDuration: 0.25) {
             self.alpha = 1

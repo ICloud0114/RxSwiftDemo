@@ -176,7 +176,7 @@
                                 <color key="textColor" red="1" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbM-FP-FSY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：xxxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MbM-FP-FSY">
                                 <rect key="frame" x="25" y="86" width="196" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="cx4-cj-UxB"/>
@@ -276,7 +276,7 @@
                                     <action selector="selectDateTimeLimitAction:" destination="Vqs-v9-Q8k" eventType="touchUpInside" id="VPl-xH-5oh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xH-F5-aHA">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xH-F5-aHA">
                                 <rect key="frame" x="90" y="148" width="255" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="2017/12/13 14:00">
@@ -286,8 +286,8 @@
                                     <action selector="selectDateTimeLimitAction:" destination="Vqs-v9-Q8k" eventType="touchUpInside" id="hrN-ZP-vVE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5d-Hw-6GK">
-                                <rect key="frame" x="30" y="221" width="191" height="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：xxxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5d-Hw-6GK">
+                                <rect key="frame" x="30" y="221" width="218" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="trC-0I-zdf"/>
                                 </constraints>
@@ -303,7 +303,7 @@
                             <constraint firstItem="uzW-0L-53r" firstAttribute="top" secondItem="HkY-9R-e47" secondAttribute="top" constant="30" id="5fc-wD-rej"/>
                             <constraint firstItem="uzW-0L-53r" firstAttribute="leading" secondItem="HkY-9R-e47" secondAttribute="leading" constant="25" id="A2e-9Y-OCu"/>
                             <constraint firstItem="L5d-Hw-6GK" firstAttribute="leading" secondItem="HkY-9R-e47" secondAttribute="leading" constant="30" id="D3R-el-gSH"/>
-                            <constraint firstItem="Roy-JK-fHg" firstAttribute="leading" secondItem="L5d-Hw-6GK" secondAttribute="trailing" constant="35" id="DH7-Ms-dSm"/>
+                            <constraint firstItem="Roy-JK-fHg" firstAttribute="leading" secondItem="L5d-Hw-6GK" secondAttribute="trailing" constant="8" id="DH7-Ms-dSm"/>
                             <constraint firstItem="L5d-Hw-6GK" firstAttribute="centerY" secondItem="Roy-JK-fHg" secondAttribute="centerY" id="HDg-tl-Lh8"/>
                             <constraint firstItem="DTT-gq-luR" firstAttribute="leading" secondItem="tcn-HQ-DW9" secondAttribute="trailing" constant="25" id="N1F-Gj-eJM"/>
                             <constraint firstItem="DTT-gq-luR" firstAttribute="baseline" secondItem="tcn-HQ-DW9" secondAttribute="baseline" id="PhN-pM-7oa"/>
@@ -347,7 +347,7 @@
                                 <color key="textColor" red="1" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-Bm-1LZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：xxxxxx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyv-Bm-1LZ">
                                 <rect key="frame" x="30" y="221" width="191" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="kSF-cO-MfD"/>
