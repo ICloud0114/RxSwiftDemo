@@ -21,6 +21,12 @@
 		1A1AC2121FC6C036007B608B /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2111FC6C036007B608B /* loadingView.swift */; };
 		1A1AC2181FC7F757007B608B /* ToiletLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2171FC7F757007B608B /* ToiletLevel.swift */; };
 		1A1AC21A1FC809A5007B608B /* TimeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2191FC809A5007B608B /* TimeTransform.swift */; };
+		1A37D3DC1FE367ED002BA619 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */; };
+		1A37D3DD1FE36D54002BA619 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */; };
+		1A37D3DE1FE36D54002BA619 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A3DFC891FE3976F00874FFA /* HistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DFC881FE3976F00874FFA /* HistoryListViewController.swift */; };
+		1A3DFC8B1FE3978A00874FFA /* HistoryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DFC8A1FE3978A00874FFA /* HistoryList.storyboard */; };
+		1A3DFC8D1FE399F300874FFA /* HistoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DFC8C1FE399F300874FFA /* HistoryListCell.swift */; };
 		1A4428591FBE8CE000CD0600 /* Toilet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4428581FBE8CE000CD0600 /* Toilet.storyboard */; };
 		1A5EBD391FC50BD6006D1FCA /* TBDryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */; };
 		1A5EBD491FC54A04006D1FCA /* TBDryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A0C221FC2BCF80067BE18 /* TBDryView.xib */; };
@@ -435,6 +441,7 @@
 			files = (
 				C89634081B95BE50002AE38C /* RxBlocking.framework in Embed Frameworks */,
 				C89634091B95BE50002AE38C /* RxCocoa.framework in Embed Frameworks */,
+				1A37D3DE1FE36D54002BA619 /* CocoaAsyncSocket.framework in Embed Frameworks */,
 				C896340A1B95BE51002AE38C /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -474,6 +481,11 @@
 		1A1AC2111FC6C036007B608B /* loadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingView.swift; sourceTree = "<group>"; };
 		1A1AC2171FC7F757007B608B /* ToiletLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToiletLevel.swift; sourceTree = "<group>"; };
 		1A1AC2191FC809A5007B608B /* TimeTransform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTransform.swift; sourceTree = "<group>"; };
+		1A37D3D91FE36777002BA619 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/CocoaAsyncSocket-chlfaproesbrvqcejlfblnjwyzcv/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket.framework"; sourceTree = "<group>"; };
+		1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = RxExample/Examples/FlyBird/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		1A3DFC881FE3976F00874FFA /* HistoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListViewController.swift; sourceTree = "<group>"; };
+		1A3DFC8A1FE3978A00874FFA /* HistoryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryList.storyboard; sourceTree = "<group>"; };
+		1A3DFC8C1FE399F300874FFA /* HistoryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListCell.swift; sourceTree = "<group>"; };
 		1A4428581FBE8CE000CD0600 /* Toilet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Toilet.storyboard; sourceTree = "<group>"; };
 		1A5EBD381FC50BD6006D1FCA /* TBDryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDryView.swift; sourceTree = "<group>"; };
 		1A5EBD4B1FC5509A006D1FCA /* TBNormalCleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBNormalCleanView.swift; sourceTree = "<group>"; };
@@ -644,7 +656,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A37D3DC1FE367ED002BA619 /* CocoaAsyncSocket.framework in Frameworks */,
 				C8A468F21B8A8C2600BF917B /* RxCocoa.framework in Frameworks */,
+				1A37D3DD1FE36D54002BA619 /* CocoaAsyncSocket.framework in Frameworks */,
 				C8A468F11B8A8C2600BF917B /* RxBlocking.framework in Frameworks */,
 				C8A468F31B8A8C2600BF917B /* RxSwift.framework in Frameworks */,
 			);
@@ -708,6 +722,15 @@
 			path = Calculator;
 			sourceTree = "<group>";
 		};
+		1A37D3D71FE363A9002BA619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */,
+				1A37D3D91FE36777002BA619 /* CocoaAsyncSocket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1A4428481FBE8CB900CD0600 /* Toilet */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,11 +765,14 @@
 			isa = PBXGroup;
 			children = (
 				1A920A4E1FE0D24D00EAA0D0 /* FlyBird.storyboard */,
+				1A3DFC8A1FE3978A00874FFA /* HistoryList.storyboard */,
 				1A920A501FE1065200EAA0D0 /* FlyBirdViewController.swift */,
+				1A3DFC881FE3976F00874FFA /* HistoryListViewController.swift */,
 				1A920A521FE1097900EAA0D0 /* SingleViewController.swift */,
 				1A920A541FE1099100EAA0D0 /* LimitViewController.swift */,
 				1A920A561FE109A200EAA0D0 /* LongTimeViewController.swift */,
 				1A920A5B1FE1306400EAA0D0 /* DateTimePickerView.swift */,
+				1A3DFC8C1FE399F300874FFA /* HistoryListCell.swift */,
 				1A920A581FE10B4600EAA0D0 /* Date+Ex.swift */,
 				1AFC6F301FE24B3C00CD8392 /* EncryptionTest.h */,
 				1AFC6F311FE24B3C00CD8392 /* EncryptionTest.mm */,
@@ -848,6 +874,7 @@
 				C88C2B281D67EC5200B01A98 /* RxExample-iOSUITests */,
 				C82E1DB11DC69E8D004A6413 /* RxExample-macOSUITests */,
 				C83366DE1AD0293800C668A7 /* Products */,
+				1A37D3D71FE363A9002BA619 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1536,6 +1563,7 @@
 				AE51C1C91DE735D8005BAF5F /* APIWrappers.storyboard in Resources */,
 				C8DF92EA1B0B38C0009BCF9A /* Images.xcassets in Resources */,
 				C8DF92E41B0B32DA009BCF9A /* Main.storyboard in Resources */,
+				1A3DFC8B1FE3978A00874FFA /* HistoryList.storyboard in Resources */,
 				1A5EBD491FC54A04006D1FCA /* TBDryView.xib in Resources */,
 				AE51C1E11DE73660005BAF5F /* TableViewWithEditingCommands.storyboard in Resources */,
 				AE51C1D91DE73633005BAF5F /* SimpleTableViewExample.storyboard in Resources */,
@@ -1617,6 +1645,7 @@
 				07A5C3DB1B70B703001EFE5C /* CalculatorViewController.swift in Sources */,
 				C849EF861C3195180048AC4A /* GitHubSignupViewController2.swift in Sources */,
 				C8477FF11D29DE8C0074454A /* AnimatableSectionModelType.swift in Sources */,
+				1A3DFC8D1FE399F300874FFA /* HistoryListCell.swift in Sources */,
 				C864BAD71C3332F10083833C /* DetailViewController.swift in Sources */,
 				1AEEE4801FBEC45700D9AA88 /* TBToiletViewController.swift in Sources */,
 				1A920A801FE21F0000EAA0D0 /* outOrder.cpp in Sources */,
@@ -1672,6 +1701,7 @@
 				1A1A0C2B1FC2BCFA0067BE18 /* ICToiletControlView.m in Sources */,
 				C83367231AD029AE00C668A7 /* Example.swift in Sources */,
 				C890A65D1AEC084100AFF7E6 /* ViewController.swift in Sources */,
+				1A3DFC891FE3976F00874FFA /* HistoryListViewController.swift in Sources */,
 				C8477FFB1D29DE8C0074454A /* IntegerType+IdentifiableType.swift in Sources */,
 				C8C46DAA1B47F7110020D71E /* WikipediaSearchCell.swift in Sources */,
 				B1604CB51BE49F8D002E1279 /* DownloadableImage.swift in Sources */,
@@ -1996,6 +2026,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 783T66X79Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RxExample/Examples/FlyBird",
+				);
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2015,6 +2049,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 783T66X79Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RxExample/Examples/FlyBird",
+				);
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2222,6 +2260,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 783T66X79Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RxExample/Examples/FlyBird",
+				);
 				INFOPLIST_FILE = "RxExample/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
