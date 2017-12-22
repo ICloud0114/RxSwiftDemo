@@ -21,9 +21,6 @@
 		1A1AC2121FC6C036007B608B /* loadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2111FC6C036007B608B /* loadingView.swift */; };
 		1A1AC2181FC7F757007B608B /* ToiletLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2171FC7F757007B608B /* ToiletLevel.swift */; };
 		1A1AC21A1FC809A5007B608B /* TimeTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1AC2191FC809A5007B608B /* TimeTransform.swift */; };
-		1A37D3DC1FE367ED002BA619 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */; };
-		1A37D3DD1FE36D54002BA619 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */; };
-		1A37D3DE1FE36D54002BA619 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A37D3DB1FE367ED002BA619 /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1A3DFC891FE3976F00874FFA /* HistoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DFC881FE3976F00874FFA /* HistoryListViewController.swift */; };
 		1A3DFC8B1FE3978A00874FFA /* HistoryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3DFC8A1FE3978A00874FFA /* HistoryList.storyboard */; };
 		1A3DFC8D1FE399F300874FFA /* HistoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3DFC8C1FE399F300874FFA /* HistoryListCell.swift */; };
@@ -441,7 +438,6 @@
 			files = (
 				C89634081B95BE50002AE38C /* RxBlocking.framework in Embed Frameworks */,
 				C89634091B95BE50002AE38C /* RxCocoa.framework in Embed Frameworks */,
-				1A37D3DE1FE36D54002BA619 /* CocoaAsyncSocket.framework in Embed Frameworks */,
 				C896340A1B95BE51002AE38C /* RxSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -656,9 +652,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A37D3DC1FE367ED002BA619 /* CocoaAsyncSocket.framework in Frameworks */,
 				C8A468F21B8A8C2600BF917B /* RxCocoa.framework in Frameworks */,
-				1A37D3DD1FE36D54002BA619 /* CocoaAsyncSocket.framework in Frameworks */,
 				C8A468F11B8A8C2600BF917B /* RxBlocking.framework in Frameworks */,
 				C8A468F31B8A8C2600BF917B /* RxSwift.framework in Frameworks */,
 			);
@@ -1334,7 +1328,7 @@
 					};
 					C83366DC1AD0293800C668A7 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 783T66X79Y;
+						DevelopmentTeam = N328N2YE4V;
 						LastSwiftMigration = 0900;
 					};
 					C849EF601C3190360048AC4A = {
@@ -2025,7 +2019,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 783T66X79Y;
+				DEVELOPMENT_TEAM = N328N2YE4V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RxExample/Examples/FlyBird",
@@ -2034,7 +2028,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-objc_loadall";
-				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.RxExample;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/FlyBird/RxExample-iOS-Bridging-Header.h";
@@ -2048,7 +2042,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 783T66X79Y;
+				DEVELOPMENT_TEAM = N328N2YE4V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RxExample/Examples/FlyBird",
@@ -2057,7 +2051,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-objc_loadall";
-				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.RxExample;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/FlyBird/RxExample-iOS-Bridging-Header.h";
@@ -2259,7 +2253,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 783T66X79Y;
+				DEVELOPMENT_TEAM = N328N2YE4V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RxExample/Examples/FlyBird",
@@ -2268,7 +2262,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-objc_loadall";
-				PRODUCT_BUNDLE_IDENTIFIER = io.rx.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lemon.RxExample;
 				PRODUCT_NAME = "RxExample-iOS";
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "RxExample/Examples/FlyBird/RxExample-iOS-Bridging-Header.h";
