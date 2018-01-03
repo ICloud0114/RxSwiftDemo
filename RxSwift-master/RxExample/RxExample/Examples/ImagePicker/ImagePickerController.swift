@@ -22,7 +22,11 @@ class ImagePickerController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        imageView.layer.cornerRadius = 7.5
+        imageView.layer.shadowColor = UIColor.red.cgColor
+        imageView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        imageView.layer.shadowOpacity = 1.0
+        
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
 
         cameraButton.rx.tap

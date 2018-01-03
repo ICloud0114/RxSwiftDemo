@@ -42,7 +42,6 @@ class SimpleValidationViewController : ViewController {
         let everythingValid = Observable.combineLatest(usernameValid, passwordValid) { $0 && $1 }
             .shareReplay(1)
         
-        usernameValid.bind(to: passwordOutlet.rx.isEnabled).disposed(by: disposeBag)
         usernameValid
             .bind(to: passwordOutlet.rx.isEnabled)
             .disposed(by: disposeBag)
@@ -62,10 +61,7 @@ class SimpleValidationViewController : ViewController {
         doSomethingOutlet.rx.tap
             .subscribe(onNext: { [weak self] in self?.showAlert() })
             .disposed(by: disposeBag)
-        flyButton.rx.tap
-            .subscribe(onNext:{
-                print("flying...")
-            }).disposed(by: disposeBag)
+
     }
     
     func showAlert() {
